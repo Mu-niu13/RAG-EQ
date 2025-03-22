@@ -1,50 +1,58 @@
 """
-使用说明:
-    该脚本用于从指定文件夹中的文本文件提取信息并生成知识语料的JSON格式。
+Usage Instructions:
+    This script is used to extract information from text files in a specified folder and generate knowledge corpus in JSON format.
 
-    使用方法:
-    python get_rag_knowledges.py -f <输入文件夹路径> -o <输出JSON文件路径> -m <模型类型> [-d]
+    How to use:
+    python get_rag_knowledges.py -f [input directory] -o <output directory> -m <model type> [-d]
 
-    参数:
-    -f --folder_path: 指定文本文件所在的输入文件夹路径。
-    -o --output_file: 指定生成的JSON文件路径。
-    -m --model: 指定使用的模型类型，可选值为 "zhipu", "deepseek", "local"。默认为 "zhipu"。
-    -d --debug: 启用调试模式，打印每一个llm输出的结果。
+    For our project:
+        python tools/rag/get_rag_knowledges.py \
+            -f docs/raw -o docs/clean/knowledges.json -m zhipu
 
-    输出 JSON 的内部样式参考:
-    {
-        "该段落标题":"段落的总结1. 2. 3."
-    }
-    {
-        "该段落标题":"段落的总结1. 2. 3."
-    }
+
+    Parameters:
+        - `-f`, `--folder_path`: Specifies the path to the input folder containing the text files.  
+        - `-o`, `--output_file`: Specifies the path for the generated JSON output file.  
+        - `-m`, `--model`: Specifies the model type to use. Options are `"zhipu"`, `"deepseek"`, and `"local"`. Default is `"zhipu"`.  
+        - `-d`, `--debug`: Enables debug mode to print the LLM output for each entry.
+
+    Sample JSON Output Format:
+
+        ```json
+        {
+            "Section Title": "Summary of the section 1. 2. 3."
+        }
+        {
+            "Section Title": "Summary of the section 1. 2. 3."
+        }
+        ```
 """
 
-import json
 import os
+import json
 import argparse
 from dotenv import load_dotenv
-from zhipuai import ZhipuAI
-from openai import OpenAI  # 导入 deepseek 的 OpenAI
-from tqdm import tqdm  # 导入 tqdm
-from transformers import AutoModelForCausalLM, AutoTokenizer  # 导入 Hugging Face 的库
+from tqdm import tqdm
 from loguru import logger
-from tianji import TIANJI_PATH
+from transformers import AutoModelForCausalLM, AutoTokenizer
+from zhipuai import ZhipuAI
+from openai import OpenAI
 
 load_dotenv()
 
 SUMMARY_PROMPT = """
-你是一个知识库语聊准备能手，你需要把我给你的内容总结成陈述句的知识语料,用于知识库检索，你在总结时需要注意下列要求：
-- 全部使用中文回复.
-- 如果遇到里面提到几步法，你要合在一个回答里面.
-- 如果里面提到人名或者是作者名 需要忽略或者代称.
-- 文中涉及关注公众号\微信之类的,需要忽略.
-- 总结后需要涵盖全方面,变为类似知识条款的参考，不要分点分1、2、3！！！只需要是一大段一大段的知识库整理.
-总结只返回条款内容。需要总结的原文如下：
+You are an expert in preparing conversational knowledge base materials. Your task is to transform the content I provide into declarative knowledge statements for use in a knowledge retrieval system. When summarizing, follow these guidelines:
+
+- Respond entirely in English.  
+- If the content contains step-by-step methods, combine them into a single cohesive summary.  
+- If names of people or authors are mentioned, ignore them or replace them with generic references.  
+- The final summary should be comprehensive and structured as continuous knowledge clauses, similar to entries in a reference system. Do not use numbered lists like 1, 2, 3, etc. — just continuous, well-organized knowledge segments.  
+
+Return only the summarized knowledge content. The original text to be summarized is as follows:
 """
 
 TITLE_PROMPT = """
-请为以下内容总结一个简短的主题或标题，不超过20个字,只要关注内容,不能有任何人名相关：
+Please summarize the following content with a concise title of no more than 20 words, focusing only on the subject matter and excluding any personal names.
 """
 
 
@@ -64,7 +72,7 @@ def get_llm_response(prompt, model_type="zhipu", debug=False):
         response = client.chat.completions.create(
             model="deepseek-chat",
             messages=[
-                {"role": "system", "content": "你是一个知识库语料准备能手，你会把文章的重点整理成一大段话"},
+                {"role": "system", "content": "You are an expert in preparing knowledge base materials. You will organize the key points of an article into one coherent paragraph."},
                 {"role": "user", "content": prompt},
             ],
             temperature=0.2,
@@ -72,9 +80,12 @@ def get_llm_response(prompt, model_type="zhipu", debug=False):
         )
         res = response.choices[0].message.content
     elif model_type == "local":
+        import torch  # Only required for local models
         model_name = "internlm/internlm2_5-7b-chat"
-        cache_dir = os.path.join(TIANJI_PATH, "temp", "local_llm")
-        device = "cuda"  # 设备设置
+        cache_dir = "docs/temp/local_llm"
+        os.makedirs(cache_dir, exist_ok=True)
+        device = "cuda"
+
         model = AutoModelForCausalLM.from_pretrained(
             model_name,
             torch_dtype="auto",
@@ -92,7 +103,7 @@ def get_llm_response(prompt, model_type="zhipu", debug=False):
             inputs.input_ids, max_new_tokens=50, max_length=12800, temperature=0.1
         )
         generated_ids = [
-            output_ids[len(input_ids) :]
+            output_ids[len(input_ids):]
             for input_ids, output_ids in zip(inputs.input_ids, outputs)
         ]
 
@@ -103,11 +114,7 @@ def get_llm_response(prompt, model_type="zhipu", debug=False):
             model="glm-4-flash",
             messages=[
                 {"role": "system", "content": prompt},
-                {
-                    "role": "user",
-                    "content": prompt,  # 这里传递 prompt
-                    "temperature": 0.1,
-                },
+                {"role": "user", "content": prompt, "temperature": 0.1},
             ],
         )
         res = response.choices[0].message.content
@@ -123,56 +130,44 @@ def process_file(file_path, model_type, debug=False):
         content = file.read()
         title = get_title(content, model_type, debug)
         summary = get_summary(content, model_type, debug)
-        return {title: summary}  # 使用生成的主题作为key
+        return {title: summary}
 
 
 def main():
-    parser = argparse.ArgumentParser(description="从文本文件夹提取信息并生成知识语料的JSON格式")
-    parser.add_argument(
-        "-f", "--folder_path", type=str, required=True, help="输入文本文件夹路径"
-    )
-    parser.add_argument(
-        "-o", "--output_file", type=str, required=True, help="输出JSON文件路径"
-    )
-    parser.add_argument(
-        "-m",
-        "--model",
-        type=str,
-        default="zhipu",
-        choices=["zhipu", "deepseek", "local"],
-        help="使用的模型类型",
-    )
-    parser.add_argument(
-        "-d", "--debug", action="store_true", help="启用调试模式，打印每一个llm输出的结果"
-    )
+    parser = argparse.ArgumentParser(description="Extract information from a folder of text files and generate knowledge corpus in JSON format.")
+    parser.add_argument("-f", "--folder_path", type=str, required=True, help="Input text folder path")
+    parser.add_argument("-o", "--output_file", type=str, required=True, help="Output JSON file path")
+    parser.add_argument("-m", "--model", type=str, default="zhipu", choices=["zhipu", "deepseek", "local"], help="Model type to use")
+    parser.add_argument("-d", "--debug", action="store_true", help="Use debug mode to print the output of each LLM response")
+
     args = parser.parse_args()
 
     txt_folder_path = args.folder_path
     output_file_path = args.output_file
     model_type = args.model
     debug = args.debug
-    error_file_path = os.path.join(TIANJI_PATH, "temp", "knowledge_error_files.txt")
+
+    os.makedirs("docs/temp", exist_ok=True)
+    error_file_path = "docs/temp/knowledge_error_files.txt"
 
     filenames = os.listdir(txt_folder_path)
     all_knowledge_data = []
-    for filename in tqdm(filenames, desc="处理文件"):
+
+    for filename in tqdm(filenames, desc="Processing files"):
         file_path = os.path.join(txt_folder_path, filename)
         try:
             knowledge_data = process_file(file_path, model_type, debug)
-            if debug:
-                logger.info(f"当前结果: {knowledge_data}")
             all_knowledge_data.append(knowledge_data)
         except Exception as e:
             try:
+                logger.warning(f"First attempt failed for {filename}, retrying...")
                 knowledge_data = process_file(file_path, model_type, debug)
-                if debug:
-                    logger.info(f"重试结果: {knowledge_data}")
                 all_knowledge_data.append(knowledge_data)
             except Exception as e:
                 with open(error_file_path, "a", encoding="utf-8") as error_file:
-                    logger.error(f"错误！{e}")
+                    logger.error(f"Error processing {file_path}: {e}")
                     error_file.write(file_path + "\n")
-            continue
+                continue
 
     with open(output_file_path, "w", encoding="utf8") as f:
         json.dump(all_knowledge_data, f, ensure_ascii=False, indent=4)
