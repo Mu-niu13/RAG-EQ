@@ -1,0 +1,265 @@
+## Conflict with Stakeholders
+
+**Definition:** Stakeholders are individuals or groups affected by or invested in your work — they might be clients, senior leaders, cross-functional partners, external vendors, or internal customers. You often don’t have formal authority over each other, but they influence outcomes and expectations heavily.
+
+---
+
+### Strategy & Principles
+- Lead with empathy and professionalism — stakeholders often have their own pressures and goals.
+- Frame conversations in terms of shared outcomes and value.
+- Avoid defensiveness — focus on alignment and clarification.
+- Use data or evidence where possible to depersonalize the conflict.
+- Clarify scope, timelines, and expectations early and often to prevent future conflicts.
+
+---
+
+### Role-Specific Tips
+- Document all agreements to avoid scope creep or miscommunication.
+- Stakeholders value outcomes — tie conflict resolution to business impact.
+- Don’t “win” the argument; aim for sustainable collaboration.
+- Find the tension between what you can flex on and what’s non-negotiable.
+- Let them feel heard before offering alternatives.
+
+---
+
+## 20 Fully Developed Conflict Examples with Stakeholders
+
+---
+
+### **Example 1: Misaligned Expectations**
+
+**Context:** A stakeholder expected delivery earlier than your timeline.
+
+**What they said:**  
+“I thought we were launching this by Friday. Why is this the first I’m hearing that it’s delayed?”
+
+**Your response:**  
+“I see where the confusion came from. I had the timeline documented as March 22, but it sounds like we had different expectations. I should’ve reconfirmed with you sooner. Let’s walk through the current status and discuss how we can close the gap.”
+
+---
+
+### **Example 2: Scope Creep**
+
+**Context:** A stakeholder keeps requesting new features or deliverables beyond the original agreement.
+
+**What they said:**  
+“Can we also add X and Y to this phase? It shouldn’t be too much work.”
+
+**Your response:**  
+“Thanks for those suggestions — they’re great ideas. To keep this phase on track, would you be open to adding them to a follow-up release? That way, we can keep quality and timelines intact. I want to be sure we’re aligned on priorities.”
+
+---
+
+### **Example 3: Disregarding Technical Constraints**
+
+**Context:** A stakeholder insists on a solution that’s not technically feasible or would create downstream issues.
+
+**What they said:**  
+“We just need this done. I don’t care how.”
+
+**Your response:**  
+“I hear how important this outcome is to you. From a technical standpoint, implementing it as-is could introduce risks that impact reliability. I’d love to propose a workaround that gets us close to the goal but stays within guardrails. Can I walk you through it?”
+
+---
+
+### **Example 4: Aggressive Tone in Meetings**
+
+**Context:** A stakeholder is visibly frustrated and uses harsh language in a meeting.
+
+**What they said:**  
+“This is ridiculous. I don’t know what your team is even doing.”
+
+**Your response:**  
+“I hear that you’re frustrated, and I want to help resolve this. Let’s take a step back to clarify what’s not working and where expectations may have diverged. I’m committed to finding a path forward that works for both teams.”
+
+---
+
+### **Example 5: Questioning Your Competence**
+
+**Context:** A stakeholder implies you or your team isn’t capable.
+
+**What they said:**  
+“Maybe we should have assigned this to someone with more experience.”
+
+**Your response:**  
+“I respect your concern, and I want to address it directly. Let’s walk through the work so far and where things may have fallen short of expectations. I’m open to feedback, and I also want to clarify what the team is doing well so we can build trust.”
+
+---
+
+### **Example 6: Conflicting Priorities**
+
+**Context:** A stakeholder’s goals conflict with your project’s direction.
+
+**What they said:**  
+“This initiative doesn’t support our business unit. We need to rethink it.”
+
+**Your response:**  
+“I understand your priorities and want to make sure we’re aligned on impact. Let’s map out where our goals diverge and look for overlaps. I’d love to co-create a compromise that still advances the broader organizational goals.”
+
+---
+
+### **Example 7: Last-Minute Requests**
+
+**Context:** They often ask for materials, data, or decisions on short notice.
+
+**What they said:**  
+“Can you pull this report by the end of today? I need it for a 5 p.m. meeting.”
+
+**Your response:**  
+“I want to support you, and I also want to make sure the data is accurate and complete. Could we look at what’s essential for today, and then follow up tomorrow with a deeper dive? That would help maintain quality.”
+
+---
+
+### **Example 8: They Go Around You**
+
+**Context:** Instead of working with you, a stakeholder bypasses your role and speaks directly to your team or manager.
+
+**What they did:**  
+Emailed your report lead instead of coordinating through you.
+
+**Your response:**  
+“I noticed you reached out directly to the team about the update. I’d appreciate being looped in so I can help manage the flow and ensure consistency. I want to be a strong partner here and make sure communication stays clear.”
+
+---
+
+### **Example 9: Undermining Your Role in Public**
+
+**Context:** They make a dismissive or sarcastic remark in a group meeting.
+
+**What they said:**  
+“Well, I guess we’ll see if your team can actually deliver this time.”
+
+**Your response (privately):**  
+“I wanted to follow up on the comment in the meeting. It came across as a bit undermining, and I know that might not have been the intent. I’d like to keep communication collaborative and trust-based — can we talk about how to stay aligned moving forward?”
+
+---
+
+### **Example 10: Vague or Shifting Requirements**
+
+**Context:** Stakeholders keep changing what they want mid-way through the project.
+
+**What they said:**  
+“Actually, we’re thinking we should go in a different direction now.”
+
+**Your response:**  
+“Thanks for letting me know. Let’s align on the implications — I want to support the new direction, and also clarify how it affects scope and timing. Could we lock in the requirements so we minimize rework and confusion?”
+
+---
+
+### **Example 11: Overstepping into Execution**
+
+**Context:** They try to micromanage how you build or implement a solution.
+
+**What they said:**  
+“Why didn’t you do it the way I outlined in my email?”
+
+**Your response:**  
+“I always appreciate your insights — your expertise helps frame the goal clearly. When it comes to execution, our team considers multiple constraints behind the scenes. I’d be happy to walk through how we made our decisions, and then gather your thoughts.”
+
+---
+
+### **Example 12: Blaming You for Delays**
+
+**Context:** The stakeholder missed their deliverable, but blames your team for being late.
+
+**What they said:**  
+“This delay is on your side.”
+
+**Your response:**  
+“I understand how delays are frustrating. I took a look at the timeline and noticed we were waiting on [dependency] from your team for about four days. I don’t want to point fingers, but I think it’s worth walking through the full timeline so we can plan better next time.”
+
+---
+
+### **Example 13: Overly Emotional Reactions**
+
+**Context:** A stakeholder overreacts to a minor mistake.
+
+**What they said:**  
+“This is unacceptable. I can’t work with this team anymore.”
+
+**Your response:**  
+“I hear that this issue has created serious frustration. Let’s take a moment to level-set. I want to understand what went wrong and what success would look like from your perspective moving forward.”
+
+---
+
+### **Example 14: Pushing Unrealistic Deadlines**
+
+**Context:** They insist on delivery dates that don't account for resource constraints.
+
+**What they said:**  
+“We need this by Monday, no exceptions.”
+
+**Your response:**  
+“I want to meet your needs, and I also want to protect quality and sustainability. Could we look at what’s most urgent versus what can be staged? That way, we’re delivering value without burning out the team or risking errors.”
+
+---
+
+### **Example 15: Lack of Trust in Your Work**
+
+**Context:** They request redundant validations, approvals, or second opinions.
+
+**What they said:**  
+“I’d like another team to review this before I accept it.”
+
+**Your response:**  
+“I’m open to additional input if it helps build confidence. At the same time, I’d love to understand if there’s something specific that’s causing concern so we can address it directly. Building trust is important to me.”
+
+---
+
+### **Example 16: Refusal to Accept Data-Driven Insights**
+
+**Context:** You present evidence-based recommendations, and they reject them for anecdotal reasoning.
+
+**What they said:**  
+“Data’s fine, but my gut says this won’t work.”
+
+**Your response:**  
+“I respect that intuition matters, especially with your experience. At the same time, I want to ensure we’re leveraging the insights we’ve uncovered. Could we run a short pilot to test both approaches and compare outcomes?”
+
+---
+
+### **Example 17: Stakeholder Ignores Your Emails**
+
+**Context:** They don’t respond to your requests for input or approvals.
+
+**What they did:**  
+Ignored your deadline reminders multiple times.
+
+**Your response:**  
+“I know your time is valuable and things get busy. I wanted to check in because I’m waiting on your feedback to move forward. Would it help if I structured the request differently, or scheduled a quick check-in instead?”
+
+---
+
+### **Example 18: Misalignment on Goals**
+
+**Context:** They’re focused on KPIs that conflict with your success metrics.
+
+**What they said:**  
+“We need speed above all else.”
+
+**Your response:**  
+“I hear that speed is the priority. On our side, we’re being held to accuracy and reliability metrics. Can we align on where the balance lies — maybe define what’s acceptable risk versus too much?”
+
+---
+
+### **Example 19: Conflict Between Stakeholders**
+
+**Context:** Two stakeholders you serve are pulling you in opposite directions.
+
+**What they said:**  
+“We need this in blue.” vs. “It must be in red.”
+
+**Your response:**  
+“I’d like to propose a short alignment meeting with both of you so we can hear each other out and find a solution that meets both of your needs. I want to make sure we’re not choosing sides, but creating shared success.”
+
+---
+
+### **Example 20: Your Role Is Not Respected**
+
+**Context:** They treat you as an executor, not a strategic partner.
+
+**What they said:**  
+“Just do what we asked — we don’t need your opinion.”
+
+**Your response:**  
+“I understand you’re looking for efficient execution, and I’ll deliver on that. I also want to offer strategic insight when I believe it could increase the project’s success. If there’s ever a time you’re open to a different lens, I’d love to share it.”

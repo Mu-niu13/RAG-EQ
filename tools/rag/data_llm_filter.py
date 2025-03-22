@@ -1,25 +1,27 @@
 """
-使用说明:
-    该脚本用于检查指定文件夹中的 Markdown 文件是否符合指定的主题要求，并将不符合要求的文件移动到输出文件夹中。
+Usage Instructions:
+    This script is designed to check whether txt files in a specified folder meet a given thematic requirement.
+    Files that do not meet the requirement will be moved to an output folder.
 
-    使用方法:
-    python 3-data_llm_filter.py -i <输入文件夹路径> -o <输出文件夹路径> -t <主题要求> [-d] [-m <模型类型>]
-
-    复制：
+    How to Use:
     python tools/rag/data_llm_filter.py \
-  -i docs/raw -o docs/filtered_out -t "emotional intelligence" \
-  -type zhipuai
+        -i [input directory] -o [output directory] -t "topic" \
+        -type [model]
+
+    For our project：
+    python tools/rag/data_llm_filter.py \
+        -i docs/raw -o docs/filtered_out -t "emotional intelligence" \
+        -type zhipuai
 
 
-    参数:
-    -i --input_folder: 指定包含 Markdown 文件的输入文件夹路径。
-    -o --output_folder: 指定不符合主题要求的 Markdown 文件的输出文件夹路径。
-    -t --theme: 指定主题相关的内容。比如 "敬酒/酒文化/喝酒/酒席"
-    -d --debug: 启用调试模式，打印每一个llm输出的结果。
-    -m --model: 指定使用的模型，默认为 'internlm/internlm2_5-7b-chat'。
-
-
+    Parameters:
+        -i, --input_folder: Path to the input folder containing txt files.
+        -o, --output_folder: Path to the output folder where non-compliant files will be moved.
+        -t, --theme: The thematic content requirement (e.g., "toasting/alcohol culture/drinking/banquets").
+        -d, --debug: Enables debug mode; prints the LLM output for each file.
+        -m, --model: Specifies the LLM model to use (default: 'internlm/internlm2_5-7b-chat').
 """
+
 import os
 import argparse
 from tqdm import tqdm
