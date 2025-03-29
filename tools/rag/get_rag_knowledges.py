@@ -9,7 +9,6 @@ Usage Instructions:
         python tools/rag/get_rag_knowledges.py \
             -f docs/raw -o docs/clean/knowledges.json -m zhipu
 
-
     Parameters:
         - `-f`, `--folder_path`: Specifies the path to the input folder containing the text files.  
         - `-o`, `--output_file`: Specifies the path for the generated JSON output file.  
