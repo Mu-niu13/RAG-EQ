@@ -1,34 +1,3 @@
-"""
-Usage Instructions:
-    This script is used to extract information from text files in a specified folder and generate knowledge corpus in JSON format.
-
-    How to use:
-    python get_rag_knowledges.py -f [input directory] -o <output directory> -m <model type> [-d]
-
-    For our project:
-        python tools/rag/get_rag_knowledges.py \
-            -f docs/raw -o docs/clean/knowledge.json -m zhipu
-        
-
-    Parameters:
-        - `-f`, `--folder_path`: Specifies the path to the input folder containing the text files.  
-        - `-o`, `--output_file`: Specifies the path for the generated JSON output file.  
-        - `-m`, `--model`: Specifies the model type to use. Options are `"zhipu"`, `"deepseek"`, and `"local"`. Default is `"zhipu"`.  
-        - `-d`, `--debug`: Enables debug mode to print the LLM output for each entry.
-
-    Sample JSON Output Format:
-
-        ```json
-        {
-        "topic": "...",       # eg. "credit stealing", "manager conflict"
-        "query": "...",       # ended with ?
-        "emotion_q": "...",   # e.g. "supportive"
-        "response": "...",
-        "emotion_r": "...",
-        }
-        ```
-"""
-
 import os
 import json
 import argparse
@@ -487,3 +456,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
