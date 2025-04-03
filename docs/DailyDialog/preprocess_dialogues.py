@@ -89,12 +89,11 @@ with open(os.path.join(base_dir, 'dialogues_text.txt'), 'r', encoding='utf-8') a
 
                 if response_indices:
                     sample = {
-                        "id": str(unique_id),
                         "topic": topic,
                         "query": " ".join([utterances[idx] for idx in query_indices]),
-                        "query_emotion": query_emotion,
+                        "emotion_q": query_emotion,
                         "response": " ".join([utterances[idx] for idx in response_indices]),
-                        "response_emotion": emotion_map[response_emotion_id]
+                        "emotion_r": emotion_map[response_emotion_id]
                     }
                     unique_id += 1
 
