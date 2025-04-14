@@ -1,20 +1,31 @@
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
-import torch
+# emotion_classifier.py
+from transformers import pipeline
+import numpy as np
 
 class EmotionClassifier:
     def __init__(self):
-        self.model_name = "bhadresh-savani/distilbert-base-uncased-emotion"
-        self.tokenizer = AutoTokenizer.from_pretrained(self.model_name)
-        self.model = AutoModelForSequenceClassification.from_pretrained(self.model_name)
+        self.classifier = pipeline(
+            "text-classification",
+            model="j-hartmann/emotion-english-distilroberta-base",
+            return_all_scores=True,
+            top_k=None
+        )
+        self.emotion_labels = [
+            "admiration", "amusement", "anger", "annoyance", "approval",
+            "caring", "confusion", "curiosity", "desire", "disappointment",
+            "disapproval", "disgust", "embarrassment", "excitement", "fear",
+            "gratitude", "grief", "joy", "love", "nervousness",
+            "optimism", "pride", "realization", "relief", "remorse",
+            "sadness", "surprise", "neutral"
+        ]
 
-    def predict(self, text):
-        inputs = self.tokenizer(text, return_tensors="pt")
-        outputs = self.model(**inputs)
-        probs = torch.nn.functional.softmax(outputs.logits, dim=-1)
-        label = torch.argmax(probs).item()
-        labels = self.model.config.id2label
-        return labels[label]
+    def get_emotion_vector(self, text: str) -> np.ndarray:
+        scores = self.classifier(text)[0]
+        score_dict = {item["label"]: item["score"] for item in scores}
+        return np.array([score_dict.get(label, 0.0) for label in self.emotion_labels])
 
-# 测试
-# clf = EmotionClassifier()
-# print(clf.predict("I'm feeling anxious."))
+    def predict(self, text: str, return_distribution=False):
+        scores = self.classifier(text)[0]
+        score_dict = {item["label"]: item["score"] for item in scores}
+        top_emotion = max(score_dict, key=score_dict.get)
+        return (top_emotion, score_dict) if return_distribution else top_emotion
