@@ -1,12 +1,18 @@
-# 简化 Plutchik 相关情绪模型
-PLUTCHIK_RELATIONS = {
-    "Fear": ["Trust", "Anticipation"],
-    "Sadness": ["Joy", "Trust"],
-    "Anger": ["Fear", "Anticipation"],
-    "Joy": ["Trust", "Anticipation"],
-    "Trust": ["Joy", "Fear"],
-    # ...
+emotion_map = {
+    "anger": ["calm", "confidence"],
+    "fear": ["reassurance", "trust"],
+    "sadness": ["hope", "support"],
+    "frustration": ["validation", "clarity", "empathy"],
+    "nervousness": ["reassurance", "calm"],
+    "disappointment": ["encouragement", "optimism"],
+    "neutral": ["helpfulness", "respect"],
+    #TODO
 }
 
 def related_emotions(emotion):
-    return PLUTCHIK_RELATIONS.get(emotion, [])
+    emotion = emotion.lower()
+    if emotion in emotion_map:
+        return emotion_map[emotion]
+    else:
+        print(f"[PlutchikEngine] Unknown emotion: {emotion} — fallback to defaults.")
+        return ["support", "understanding", "calm"]

@@ -29,18 +29,18 @@ MODEL = SentenceTransformer('all-MiniLM-L6-v2', device=device)
 print(f"[Embedding] Model loaded on {device}")
 
 def build_index():
-    with open('docs/clean/knowledge.json', 'r', encoding='utf-8') as f:
+    with open('data/empathetic_dialogues.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
 
-    queries = [entry["query"] for entry in data]
+    texts = [item['utterance'] for item in data]
 
     # ➤ 增加 batch_size，充分利用 GPU 性能
-    embeddings = MODEL.encode(queries, batch_size=64, show_progress_bar=True)
+    embeddings = MODEL.encode(texts, batch_size=64, show_progress_bar=True)
 
     index = faiss.IndexFlatL2(embeddings.shape[1])
     index.add(np.array(embeddings))
     faiss.write_index(index, 'faiss.index')
 
-    print(f"[FAISS] Indexed {len(queries)} entries.")
+    print(f"[FAISS] Indexed {len(texts)} entries.")
 
 build_index()
