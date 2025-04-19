@@ -1,7 +1,7 @@
 from rag_engine import rag_pipeline
 
 if __name__ == "__main__":
-    print("🤖 Welcome to Emotion-aware RAG CLI")
+    print("Welcome to Emotion-aware RAG CLI")
     print("-" * 50)
     while True:
         user_query = input("🧑 Your query (or 'exit'): ").strip()

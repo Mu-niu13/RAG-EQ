@@ -7,6 +7,7 @@ from llama_cpp import Llama
 import json
 import torch
 from sklearn.metrics.pairwise import cosine_similarity
+from query_rewrite import rewrite_query_with_emotion
 
 # setting
 INDEX_FILE = 'faiss.index'
@@ -21,7 +22,7 @@ EMOTION_MODEL = EmotionClassifier()
 LLM = Llama(model_path="models/llama-2-7b-chat.Q4_K_M.gguf", n_ctx=2048, n_threads=4)
 FAISS_INDEX = faiss.read_index(INDEX_FILE)
 
-# helper 情绪向量化函数（基于 EmotionClassifier 概率输出）
+
 def get_emotion_vector(emotion_dist, labels):
     return np.array([emotion_dist.get(label, 0.0) for label in labels])
 
@@ -29,6 +30,10 @@ def get_emotion_vector(emotion_dist, labels):
 # two-stage rag main pipeline
 def rag_pipeline(user_query, top_k=5):
     # Stage 1
+    # rewrite query
+    user_query = rewrite_query_with_emotion(LLM,EMOTION_MODEL, user_query)
+    print(f"[Query Rewrite] Final rewritten query:\n{user_query}")
+
     # Emotion classification
     primary_emotion, emotion_dist = EMOTION_MODEL.predict(user_query, return_distribution=True)
     related = related_emotions(primary_emotion)
@@ -51,25 +56,14 @@ def rag_pipeline(user_query, top_k=5):
         entry_dist = EMOTION_MODEL.predict(entry['utterance'], return_distribution=True)[1]
         entry_vec = get_emotion_vector(entry_dist, EMOTION_MODEL.emotion_labels)
         sim = cosine_similarity([user_emotion_vec], [entry_vec])[0][0]
+        if sim < 0.4:
+            continue
         scored.append((sim, entry))
     scored.sort(reverse=True, key=lambda x: x[0])
     top_docs = [x[1] for x in scored[:3]]
 
     # prompt
     context = "\n".join([f"- {doc['utterance']}" for doc in top_docs])
-    # 情绪陪伴
-#     prompt = f"""You are an empathetic emotional support assistant.
-# The user currently feels {primary_emotion}.
-# Your goal is to guide the user toward feeling {', '.join(related)} by offering a supportive and helpful response.
-#
-# Relevant past responses:
-# {context}
-#
-# User's concern:
-# {user_query}
-#
-# Assistant:"""
-    # 高情商
     prompt = f"""You are an expert in high emotional intelligence and workplace diplomacy.
 Your role is not just to comfort the user, but to provide tactful, thoughtful, and strategic suggestions for handling sensitive interpersonal situations.
 
@@ -87,5 +81,5 @@ Assistant:"""
 
     # LLM response
     output = LLM(prompt, max_tokens=256)
-    print("Raw output:", print(output))
+    print("Raw output:", output)
     return output['choices'][0]['text'].strip()

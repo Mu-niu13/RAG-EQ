@@ -1,4 +1,3 @@
-# emotion_classifier.py
 from transformers import pipeline
 import numpy as np
 
@@ -23,6 +22,9 @@ class EmotionClassifier:
         scores = self.classifier(text)[0]
         score_dict = {item["label"]: item["score"] for item in scores}
         return np.array([score_dict.get(label, 0.0) for label in self.emotion_labels])
+
+    def get_emotion_vector_eval(self, emotion_dist: dict) -> np.ndarray:
+        return np.array([emotion_dist.get(label, 0.0) for label in self.emotion_labels])
 
     def predict(self, text: str, return_distribution=False):
         scores = self.classifier(text)[0]

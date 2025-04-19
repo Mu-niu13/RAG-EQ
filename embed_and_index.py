@@ -34,7 +34,6 @@ def build_index():
 
     queries = [entry["query"] for entry in data]
 
-    # ➤ 增加 batch_size，充分利用 GPU 性能
     embeddings = MODEL.encode(queries, batch_size=64, show_progress_bar=True)
 
     index = faiss.IndexFlatL2(embeddings.shape[1])
