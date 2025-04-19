@@ -1,4 +1,3 @@
-# emotion_classifier.py
 from transformers import pipeline
 import numpy as np
 
