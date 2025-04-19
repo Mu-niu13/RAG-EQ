@@ -88,8 +88,6 @@ models/*.gguf
 # vector db
 *.index
 
-eval/data/
-
 .pdm.toml
 .pdm-python
 .pdm-build/
