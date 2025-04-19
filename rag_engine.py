@@ -56,25 +56,14 @@ def rag_pipeline(user_query, top_k=5):
         entry_dist = EMOTION_MODEL.predict(entry['utterance'], return_distribution=True)[1]
         entry_vec = get_emotion_vector(entry_dist, EMOTION_MODEL.emotion_labels)
         sim = cosine_similarity([user_emotion_vec], [entry_vec])[0][0]
+        if sim < 0.4:
+            continue
         scored.append((sim, entry))
     scored.sort(reverse=True, key=lambda x: x[0])
     top_docs = [x[1] for x in scored[:3]]
 
     # prompt
     context = "\n".join([f"- {doc['utterance']}" for doc in top_docs])
-    # emotion accompany
-#     prompt = f"""You are an empathetic emotional support assistant.
-# The user currently feels {primary_emotion}.
-# Your goal is to guide the user toward feeling {', '.join(related)} by offering a supportive and helpful response.
-#
-# Relevant past responses:
-# {context}
-#
-# User's concern:
-# {user_query}
-#
-# Assistant:"""
-    # high EI
     prompt = f"""You are an expert in high emotional intelligence and workplace diplomacy.
 Your role is not just to comfort the user, but to provide tactful, thoughtful, and strategic suggestions for handling sensitive interpersonal situations.
 

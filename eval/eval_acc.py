@@ -1,53 +1,81 @@
-# from datasets import load_dataset
-# from sklearn.metrics import classification_report, confusion_matrix
-# import seaborn as sns
-# import matplotlib.pyplot as plt
-# import numpy as np
-# import pandas as pd
-#
-# # from add_project_root import add_project_root
-# # add_project_root()
-# # from emotion_classifier import EmotionClassifier
-# import ./emotion_classifier
-#
-# # Load test set (GoEmotions or EmpatheticDialogues with labels)
-# dataset = load_dataset("go_emotions", split="test")
-#
-# # Emotion classifier instance
-# clf = EmotionClassifier()
-#
-# # Limit to single-label examples only (GoEmotions has multi-label)
-# filtered = dataset.filter(lambda x: len(x['labels']) == 1)
-#
-# # Map ID to label names
-# id2label = dataset.features['labels'].feature.names
-#
-# # Collect predictions and ground truths
-# true_labels = []
-# pred_labels = []
-#
-# print("Evaluating on", len(filtered), "samples")
-#
-# for example in filtered:
-#     text = example['text']
-#     true = id2label[example['labels'][0]]
-#     pred = clf.predict(text)
-#     true_labels.append(true)
-#     pred_labels.append(pred)
-#
-# # Print classification report
-# report = classification_report(true_labels, pred_labels, zero_division=0)
-# print(report)
-#
-# # Confusion Matrix
-# labels = sorted(list(set(true_labels + pred_labels)))
-# cm = confusion_matrix(true_labels, pred_labels, labels=labels)
-# df_cm = pd.DataFrame(cm, index=labels, columns=labels)
-#
-# plt.figure(figsize=(12, 10))
-# sns.heatmap(df_cm, annot=False, fmt='d', cmap="Blues")
-# plt.title("Confusion Matrix - Emotion Classifier")
-# plt.xlabel("Predicted")
-# plt.ylabel("True")
-# plt.tight_layout()
-# plt.show()
+# eval acc for retrieval prediction
+import torch
+from datasets import load_dataset
+from sentence_transformers import SentenceTransformer
+from sklearn.metrics import precision_score, recall_score
+from sklearn.metrics.pairwise import cosine_similarity
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import json
+from tqdm import tqdm
+
+import sys, os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from emotion_classifier import EmotionClassifier
+import faiss
+
+
+# Settings
+INDEX_FILE = "../faiss.index"
+DATA_FILE = "data/empathetic_dialogues.json"
+TOP_K = 5
+
+device = "cuda" if torch.cuda.is_available() else "cpu"
+
+# Load models
+emotion_model = EmotionClassifier()
+embed_model = SentenceTransformer("all-MiniLM-L6-v2", device=device)
+index = faiss.read_index(INDEX_FILE)
+
+# Load corpus
+with open(DATA_FILE, "r", encoding="utf-8") as f:
+    corpus = json.load(f)
+
+# Load evaluation set
+# You can change this to another dataset with (query, label_idx) structure
+eval_set = load_dataset("empathetic_dialogues", split="test[:500]")
+
+hit_count = 0
+emotion_sims = []
+total = 0
+
+print("[Eval] Start retrieval evaluation...")
+
+for sample in tqdm(eval_set):
+    query = sample["utterance"]
+    label_idx = sample["conv_id"] if "conv_id" in sample else None  # optional
+
+    # Emotion vector of query
+    query_emotion, dist = emotion_model.predict(query, return_distribution=True)
+    query_vec = embed_model.encode([query]).astype("float32")
+    query_emotion_vec = np.array([dist.get(label, 0.0) for label in emotion_model.emotion_labels])
+
+    # Retrieval
+    D, I = index.search(query_vec, TOP_K)
+    retrieved = [corpus[i] for i in I[0]]
+
+    # Emotion similarity
+    sims = []
+    matched = False
+    for entry in retrieved:
+        entry_dist = emotion_model.predict(entry["utterance"], return_distribution=True)[1]
+        entry_vec = emotion_model.get_emotion_vector_eval(entry_dist)
+
+        sim = cosine_similarity([query_emotion_vec], [entry_vec])[0][0]
+        sims.append(sim)
+
+        # Ground-truth hit
+        if label_idx is not None and entry.get("conv_id") == label_idx:
+            matched = True
+
+    if matched:
+        hit_count += 1
+    emotion_sims.append(np.mean(sims))
+    total += 1
+
+# Results
+print("\n========= Retrieval Evaluation =========")
+if label_idx is not None:
+    print(f"Precision@{TOP_K}: {hit_count / total:.4f}")
+print(f"Average Emotion Similarity: {np.mean(emotion_sims):.4f}")
