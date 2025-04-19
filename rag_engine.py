@@ -31,7 +31,7 @@ def get_emotion_vector(emotion_dist, labels):
 def rag_pipeline(user_query, top_k=5):
     # Stage 1
     # rewrite query
-    user_query = rewrite_query_with_emotion(user_query)
+    user_query = rewrite_query_with_emotion(LLM,EMOTION_MODEL, user_query)
     print(f"[Query Rewrite] Final rewritten query:\n{user_query}")
 
     # Emotion classification
