@@ -45,7 +45,7 @@ with open(os.path.join(base_dir, 'dialogues_text.txt'), 'r', encoding='utf-8') a
      open(os.path.join(base_dir, 'dialogues_emotion.txt'), 'r', encoding='utf-8') as f_emotion, \
      open(os.path.join(base_dir, 'dialogues_act.txt'), 'r', encoding='utf-8') as f_act, \
      open(os.path.join(base_dir, 'dialogues_topic.txt'), 'r', encoding='utf-8') as f_topic, \
-     open(os.path.join(base_dir, '../clean/cleaned_dialogues.jsonl'), 'w', encoding='utf-8') as f_out:
+     open(os.path.join(base_dir, '../clean/cleaned_dialogues.json'), 'w', encoding='utf-8') as f_out:
 
     # Iterate through all lines in the dataset
     for text_line, emo_line, act_line, topic_line in zip(f_text, f_emotion, f_act, f_topic):

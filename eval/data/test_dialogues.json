@@ -1,0 +1,1402 @@
+[
+  {
+    "topic": "Finance",
+    "query": "How are you ?",
+    "emotion_q": "no emotion",
+    "response": "I ’ m doing well .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "Any more ?",
+    "emotion_q": "no emotion",
+    "response": "Of course , no list of film would be complete without animated movies . These are especially popular among children .",
+    "emotion_r": "happiness"
+  },
+  {
+    "topic": "Relationship",
+    "query": "You wanna shoot some hoops ?",
+    "emotion_q": "no emotion",
+    "response": "I already tried to call up some of the guys , but they are all busy .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "It's a bit . But I can give you a discount . How about 50 yuan ?",
+    "emotion_q": "no emotion",
+    "response": "No . I'm afraid the price is too low .",
+    "emotion_r": "sadness"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Not yet . Sit here please.How would you like your hair done ?",
+    "emotion_q": "no emotion",
+    "response": "A trim and perm .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Politics",
+    "query": "When was this break-in ?",
+    "emotion_q": "no emotion",
+    "response": "I believe it happened last night .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Any vegetable ?",
+    "emotion_q": "no emotion",
+    "response": "I'd rather have broccoli .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "You seem to like her very much , don't you ?",
+    "emotion_q": "no emotion",
+    "response": "I can't deny that . She is so beautiful that I fell in love with her at the first sight . I wish I knew more about her . But I heard that she had a three-year-old girl . I can not belive that . It must be cooked up by someone .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Only ten percent tax is included in the bill . Then one hundred U . S . dollars covers everything , doesn't it ?",
+    "emotion_q": "no emotion",
+    "response": "It sure does .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "That's what I thought . It seems that he's been seeing someone else for about two months . Two months ? How did you find out ?",
+    "emotion_q": "no emotion",
+    "response": "I asked for leave and was at home when the telephone rang . I picked it up and a girl asked to talk to Mark . She then asked if I was his sister , and I said no , I was his wife . She hung up immediately .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Health",
+    "query": "Verry sorry to have kept you waiting so long . What do you want , Madam ?",
+    "emotion_q": "no emotion",
+    "response": "I want haircut and perm .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "It ’ s on the other side of this floor . What ’ s your rule about pets ?",
+    "emotion_q": "no emotion",
+    "response": "We allow one or two pets but you have to pay a $ 300 deposit .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Politics",
+    "query": "Did you hear who won the election ?",
+    "emotion_q": "no emotion",
+    "response": "I can ’ t believe that Obama won .",
+    "emotion_r": "surprise"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "I have no idea . I thought this was the right stop . It doesn't look right to me . Did you make us get off early ?",
+    "emotion_q": "no emotion",
+    "response": "I think we did .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Politics",
+    "query": "Did you vote today ?",
+    "emotion_q": "no emotion",
+    "response": "I sure did !",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Work",
+    "query": "Service Technician . How can I apply for this position ?",
+    "emotion_q": "no emotion",
+    "response": "You need to fill out an Application Form .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Tourism",
+    "query": "Oh , honey ! Don ’ t you remember this important day to us ?",
+    "emotion_q": "anger",
+    "response": "Sorry . It is our 10th wedding anniversary this June 20 .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Health",
+    "query": "For two days . Do you have a fever ?",
+    "emotion_q": "no emotion",
+    "response": "I ’ m afraid so . Sometimes I feel hot and sometimes I feel cold . Let me take your temperature first .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "School Life",
+    "query": "Mr . : Here's a hall pass for it . Do you need someone to walk you there ?",
+    "emotion_q": "no emotion",
+    "response": "I can manage on my own . Thanks . Mr . : I'll drop by later to check on you .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Finance",
+    "query": "Certainly , Madam . What would you like to know ?",
+    "emotion_q": "no emotion",
+    "response": "Well , everything really . All right . We can grant a Financing Promise Quota , if you qualify . This means that we can deal with all of your needs in a speedy and efficient way . Firstly , your Credit Rating must be class A , and your Debt to Asset Ratio must be top notch , for the industry you are involved in .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Attitude & Emotion",
+    "query": "So , what happened ?",
+    "emotion_q": "no emotion",
+    "response": "He never came .",
+    "emotion_r": "sadness"
+  },
+  {
+    "topic": "Relationship",
+    "query": "how do you feel about wearing name logos or slogans on your clothing ?",
+    "emotion_q": "no emotion",
+    "response": "I've never really thought about it before . I guess it doesn't bother me .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "What's for dinner tonight ?",
+    "emotion_q": "no emotion",
+    "response": "It's whatever you're planning on cooking .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "I am not sure . But it'll be at least ten yuan an hour . How mush would it cost if someone parks here for one hour and ten minutes ?",
+    "emotion_q": "no emotion",
+    "response": "That would be twenty yuan , sir . We charge only by the number of hours , no split of each hour . That's expensive .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "School Life",
+    "query": "Is it on the shelf ?",
+    "emotion_q": "no emotion",
+    "response": "I didn ’ t see it . Apparently somebody took that book out of the library .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Well , to be frank , yes , I do . Oh , I ’ m sorry . But this isn ’ t a no-smoker , isn ’ t it ? I mean would you mind if I smoke here ?",
+    "emotion_q": "no emotion",
+    "response": "Actually it is . Perhaps you haven ’ t noticed the sign .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Attitude & Emotion",
+    "query": "How's your new apartment ?",
+    "emotion_q": "no emotion",
+    "response": "I thought it was in a quiet neighborhood , but it isn't .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "Oh , yes . I like playing basketball . Can you tell me why you like it ?",
+    "emotion_q": "no emotion",
+    "response": "Because I like the feeling of cooperating with others .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Where is your store located ?",
+    "emotion_q": "no emotion",
+    "response": "We are on Nanjing Road , next to the theatre .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "School Life",
+    "query": "In fact , our dormitory is much worse than they can be described . It's hard for me to imagine . How can you stand that ?",
+    "emotion_q": "no emotion",
+    "response": "You'll get used to it gradually .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "of course I was scared . But I had an instructor that went with me and that helped . so have you cured your fear of heights ?",
+    "emotion_q": "no emotion",
+    "response": "I think so . After I jumped out of the plane , I realized that I should just enjoy life . Worrying about it or not doing things out of fear is just plain silly . I'm impressed .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Finance",
+    "query": "Do you have another account with us ?",
+    "emotion_q": "no emotion",
+    "response": "I sure do .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "What time , sir ?",
+    "emotion_q": "no emotion",
+    "response": "Around 8 .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "The dress was on sale yesterday . Are you sure ? I'd be happy to pay the sale price today .",
+    "emotion_q": "no emotion",
+    "response": "I'm so sorry , but rules are rules .",
+    "emotion_r": "sadness"
+  },
+  {
+    "topic": "Politics",
+    "query": "I think they went to Mexico , but I'm not sure.It ' s a bad thing to return home to.They ' ll come home from their trip , and they'll see half their house burned . Yes , but at least this way no one gets hurt.It ' s better to have a fire in your house when you're not home . Don't you think ?",
+    "emotion_q": "no emotion",
+    "response": "Yes , I suppose . It's a dangerous thing if a fire starts when people are sleeping .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "That depends . What does she look like ?",
+    "emotion_q": "no emotion",
+    "response": "Well , she's got a beautiful face and long curly red hair .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Actually , the one-bedroom is the only vacant apartment right now . Do you think any studios will open up soon ?",
+    "emotion_q": "no emotion",
+    "response": "No , not for a few months .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "no , of course not . He is still single . then what's your problem ?",
+    "emotion_q": "no emotion",
+    "response": "I try to keep it to myself . But there is a lot of gossip about us .",
+    "emotion_r": "sadness"
+  },
+  {
+    "topic": "Work",
+    "query": "You must have been prepared for a long time . Some statistics in this presentation are not easy to find , right ?",
+    "emotion_q": "no emotion",
+    "response": "Well , yes . Several colleagues from different departments helped me with that . They are very supportive . I consulted an economic expert last week . He was very kind to give valuable suggestions .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Attitude & Emotion",
+    "query": "is everything alright ?",
+    "emotion_q": "no emotion",
+    "response": "yes , everything is fine .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "I am swapped with work after 10 - day holiday . Where did you spend your holiday ?",
+    "emotion_q": "no emotion",
+    "response": "I went to Paris .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "Did you watch the movie program on Channel 6 last night ?",
+    "emotion_q": "no emotion",
+    "response": "Yes , I did . It is a horrible movie . I wonder why TV programs often show much violence . Actually , more and more people have realized that violence on TV may lead to the increase of crime rates among teenagers . They are especially harmful to teenagers . But anyhow there are many worthwhile programs .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Does it look like a good fit ?",
+    "emotion_q": "no emotion",
+    "response": "It's definitely your size . Yes , it is very nice . I'll take it .",
+    "emotion_r": "happiness"
+  },
+  {
+    "topic": "Finance",
+    "query": "Very well , Mrs.Wang . I'll not reduce my order . I'll take the full quantity you offer . And I'll arrange for the Letter of Credit to be opened in your favor as soon as I get home . When will that be ?",
+    "emotion_q": "no emotion",
+    "response": "Early next week . In the meantime , I should be very pleased if you would get everything ready . I hope that the goods can dispatched promptly after you get my Letter of Credit . You can rest assured of that . We'll book you order and inquire for the shipping space now , so that shipment can be effected within two or three weeks of receipt of your L / C .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "It's a little green post-it note , stuck right in the middle of my computer screen . And ? What does it say ? Isn't there a name ?",
+    "emotion_q": "no emotion",
+    "response": "It says , Zina , I like how you rhumba . An admirer .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Tourism",
+    "query": "Oh , you look kind of pale . What's the matter ?",
+    "emotion_q": "no emotion",
+    "response": "I feel sick . Do you ? Just a minute . Let me get the airsick bag ready ... Here . Thank you .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Tourism",
+    "query": "Yes , we do . What kind of room would you like ?",
+    "emotion_q": "no emotion",
+    "response": "I'd like a suite for four nights . Please wait a moment while I check availability . Ah , I'm sorry , sir . We only have a double room available now .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "Can you read what this says ?",
+    "emotion_q": "no emotion",
+    "response": "Yes , and you could too if your hair wasn't hanging down in your face . Don't dis my hair ! I like it like this . You like it , but it's getting to be a handicap for you . Hey , that's enough about my hair . I know a great hairdresser not far from here and she is cute too . I don't go to hairdressers because they're cute .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "That one there ?",
+    "emotion_q": "no emotion",
+    "response": "That's right . Then you will follow the signs to Gate 85 .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Attitude & Emotion",
+    "query": "David , why don't you clean your room ?",
+    "emotion_q": "no emotion",
+    "response": "I am not in the mood .",
+    "emotion_r": "sadness"
+  },
+  {
+    "topic": "School Life",
+    "query": "I am worried that I messed up on a test . Well , let me take a look at my grade book . How do YOU think you are doing ?",
+    "emotion_q": "no emotion",
+    "response": "I think I am doing great , except for that one test !",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Finance",
+    "query": "Sorry , I'm not quite sure if I understand . In what way , Sir ? Has your card been stolen ?",
+    "emotion_q": "no emotion",
+    "response": "No , no . Nothing at all like that . It's just that I applied for a credit card with you a while ago , my application was accepted , but I'm still waiting for my card . Oh , I see , Sir . Well , it does take 5 working days to issue and post the card . Yes , my application was accepted last Friday . Now it's Wednesday , that's more than 5 days . Sorry , Sir , but it's 5 working days . This does not include weekends , so your card should be with you later this week . Of course ! How silly of me ! Yes , 5 working days would mean this Friday , at the earliest . I see . I'm sorry to trouble you .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Work",
+    "query": "I am good at pulling together teams of people to accomplish a task . What are you not good at ?",
+    "emotion_q": "no emotion",
+    "response": "I am impatient with myself at times and am hard on myself .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "I'm out of work at the moment . Why ?",
+    "emotion_q": "no emotion",
+    "response": "I was fired last week . I'm sorry to hear that . It doesn't matter .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Hey honey , how was your day ?",
+    "emotion_q": "no emotion",
+    "response": "It was alright . I ran into Bill and we got to talking for a while . He ’ s in a bit of a jam .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Work",
+    "query": "No , my father and brother are doing that . Have you finished school ?",
+    "emotion_q": "no emotion",
+    "response": "Yes , I have already graduated .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "Usually for lunch , we don't have to reserve a table , they should allow walk-ins . But to be on the safe side , I'll order a table for half-past twelve . Will that suit your schedule ?",
+    "emotion_q": "no emotion",
+    "response": "I've arranged to meet them at the restaurant at twelve . Can you make the reservation a little earlier ? If we start earlier , it will give us more time for a longer lunch .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Finance",
+    "query": "Welcome to the Consultancy Department , I'm Greg Wu . What can I assist you with today ?",
+    "emotion_q": "no emotion",
+    "response": "I need to do a credit investigation on another company , but I'm worried it'll be a bit difficult .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Health",
+    "query": "The doctor said that I probably have had it a few days . Have you been using anything for it ?",
+    "emotion_q": "no emotion",
+    "response": "I bought some over-the-counter lotion , and I am taking an antihistamine . That will probably take care of your symptoms . I ’ ll see you tomorrow .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "The stove and refrigerator are in good working order , And I don't see any loose electric wiring that could cause fires . Are the plumbing all right ?",
+    "emotion_q": "no emotion",
+    "response": "The plumbing seems OK , too . The toilet flushes and the shower has hot and cold water And the sinks don't seem to leak . The place is OK . Let's go there and have a look at it again .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Culture & Education",
+    "query": "I think I'm making good progress . Is it harder than you thought ?",
+    "emotion_q": "no emotion",
+    "response": "At first it was , but now I've got the basics.It ' s fun .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Really ? I thought you hated shopping ?",
+    "emotion_q": "surprise",
+    "response": "I do , that ’ s why you should appreciate this gift ! Sure . That ’ s really nice of you . Let ’ s go in and try some things on . How about this red dress ? I think it would really suit you .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Health",
+    "query": "I am not very sure . Maybe for three days . Do you have any stomachache ?",
+    "emotion_q": "no emotion",
+    "response": "I guess so . It comes and goes . Open your mouth and say ah ... God , you are suffering from the swelling of tonsils .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Tourism",
+    "query": "Excellent ! Our company has more than ten years of experience in the adventure tourism and sports field . Let me show you some options . This is our most popular choice , our river guides will take you on a whitewater rafting trip followed by a ride in a hot air balloon ! I don ’ t really think I ’ m ready to throw myself down a river full of jagged rocks in a rubber boat or go up in the air in a wicker basket held up by an oversize balloon . What else do you have ?",
+    "emotion_q": "no emotion",
+    "response": "Well , in that case , we can take you hang gliding with one of our experienced instructors . It ’ s the closest you can get to flying . What ? You mean strap myself to a flimsy kite ? No , thank you ! Next !",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "Honey , wait ! I've sprained my ankle . Oh , my god , are you OK ?",
+    "emotion_q": "no emotion",
+    "response": "Of course not ! Come on , sit down , and let me have a look . The pain is killing me . I told you to wear running shoes . But you don't listen . I thought leather shoes will do just as well . Hold on , don't move , I will take care of that .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "No , he's coming with Aunt Cynthia and the girls . Mother , I don't remember the girls . How old are they ?",
+    "emotion_q": "no emotion",
+    "response": "Your cousin Fay is fifteen . Rosemary is older than Fay . She's seventeen .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "I guess the first thing is the price , the second is the size , and of course the color will play a role too . But I have to be honest . It is our today ’ s responsibility to take care about our environment . Therefore , I will also pay attention to the fuel consumption of the car . You know , the rise in gasoline prices is huge . So I would rather to consider a smaller car with smaller engine . For which I can also save some tax . Last of the list , I also consider the safety . What about the environmental factors ?",
+    "emotion_q": "no emotion",
+    "response": "Well , I do prefer the lower emission cars as long as it doesn ’ t cost much . Some environmentally-friendly cars are really expensive . Sure they are . Some hi-tech devices are built in to make sure they pollute less . Some of these green cars have not become standard . So the production costs are still high . But anyway , we should make efforts to start with .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "I ran it against that fence pole as I crashed . What do you think ? Damn , it hurts !",
+    "emotion_q": "anger",
+    "response": "We'll have to get you to a hospital . I can ride you on the back of my bike . I'm lucky I wasn't killed . I must have been going around forty-five miles an hour.There was too much gravel on that corner . I slid out .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Work",
+    "query": "Do you think I believe the story like that ?",
+    "emotion_q": "anger",
+    "response": "But it's true .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "I'll have steak . How would you like your steak done ?",
+    "emotion_q": "no emotion",
+    "response": "Medium .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "Think nothing of it , Tony . I ’ m sure you ’ d do the same for me . Could you tell me a bit more about the work there ? I mean , those dos and don'ts . I am a green hand , you know .",
+    "emotion_q": "no emotion",
+    "response": "First of all , you must be punctual . You should be there before 6 p . m . so that you will have half an hour for preparation changing clothes and things like that . Then , remember you should smile . Smile to your customers all the time . Never pull a long face even If you feel awful that day . Anything else ? Oh , yes . Never argue with your boss . Learn to say ' Yes , sir . '",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Yes , it is almost new here . Is it a color TV or a black and white TV ?",
+    "emotion_q": "no emotion",
+    "response": "It is a color TV . You know , the rich people like the digital one now . So they have no room for them .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "where are you going , Jane ?",
+    "emotion_q": "no emotion",
+    "response": "I'm going to the hospital to see Susan . I saw her yesterday . She was a little better .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "School Life",
+    "query": "What can I do for you today ?",
+    "emotion_q": "no emotion",
+    "response": "I would like to use a computer .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "It was in our bedroom . Are you on the top floor , or is there another apartment above you ?",
+    "emotion_q": "no emotion",
+    "response": "We are on the top floor .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Food is less expensive in a cafeteria , because you serve yourself . How to do it ?",
+    "emotion_q": "no emotion",
+    "response": "Just pick up a tray , then put a knife , a fork , a spoon and a paper napkin on it and stand in the line .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "How much is a soft ?",
+    "emotion_q": "no emotion",
+    "response": "$ 15.And for a hard one , only $ 6 . Then one hard seat , please . OK.Here is your change.The train leaves on platform 8 .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Attitude & Emotion",
+    "query": "I managed to get a sandwich from a flight attendant . How about you ?",
+    "emotion_q": "no emotion",
+    "response": "I had a few coffees while I was waiting . Let's get out of here !",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Work",
+    "query": "So soon ? It seems to be in the early stages .",
+    "emotion_q": "surprise",
+    "response": "We have developed new technology about it . And the new product will be a pleasure to be hold . Well , it's sounding good ! I'm looking forward to that .",
+    "emotion_r": "happiness"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Are you sure you know where this bus goes ?",
+    "emotion_q": "no emotion",
+    "response": "It should go to Altadena .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "School Life",
+    "query": "I am glad that that works out ; can you find my office ?",
+    "emotion_q": "no emotion",
+    "response": "Yes , I can . Just follow the walkway to the outside and climb the stairs to the third floor . I got it . If you do get lost , just ask someone in the building to point the way . Thank you , I'll be there . If you need to cancel your appointment , please give me a call !",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Tourism",
+    "query": "What does a Chinese food have ?",
+    "emotion_q": "no emotion",
+    "response": "Rice , egg , beef and vegetables . That will be fine . I'll take it .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Your offering price is not out-of-line . The owners will either take it or make a counter-offer . Does it usually take very long for the owners to get back to you with an acceptance ?",
+    "emotion_q": "no emotion",
+    "response": "It usually doesn ’ t take very long for owners to respond to an offer .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "As long as it doesn't take too long . My boyfriend says I work too much . That I spend more time with you than with him . Was he upset when you told him you had to leave this weekend ?",
+    "emotion_q": "no emotion",
+    "response": "He said not to bother coming back . And I said , fine , I won't .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Would you like a drink ?",
+    "emotion_q": "no emotion",
+    "response": "Oh , I see . I'll have a beer please Ok , here you are .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "May I help you , sir ?",
+    "emotion_q": "no emotion",
+    "response": "Yes . I would like a pair of black leather shoes in size 25 . Please try these on . The tip is rather narrow . I will bring you a larger size .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Tourism",
+    "query": "Great ! I like that suggestion , but what if I need to print something there ?",
+    "emotion_q": "no emotion",
+    "response": "Unfortunately , you'll have to go to the computer lab for your printing needs .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "What time would you like to take the test ?",
+    "emotion_q": "no emotion",
+    "response": "If I could do it in the morning , then that would be good .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "No , thanks . I'm in a hurry . Your car is ready . Good ! How much is it ?",
+    "emotion_q": "no emotion",
+    "response": "250 yuan , please ! That is expensive . You should know about the oil crisis .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Work",
+    "query": "That's fine with me . How much time are we going to have to work on this ?",
+    "emotion_q": "no emotion",
+    "response": "Perhaps one year , I'm not sure .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Work",
+    "query": "Good morning , I am Monica . Are you Mr . White , the manager of finance department ? I am the newcomer and also working in the finance department .",
+    "emotion_q": "no emotion",
+    "response": "Yes , that is me . Nice to meet you , Monica . Welcome on board ! Thank you . I am very happy to have my own office now . I ’ Ve never had one before . It is very nice .",
+    "emotion_r": "happiness"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "She ’ s sitting under the tree . Is Tim in the garden , too ?",
+    "emotion_q": "no emotion",
+    "response": "Yes , he is . He ’ s climbing the tree .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "Really ? He is my type .",
+    "emotion_q": "surprise",
+    "response": "He is everybody's type .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "I can ask around at work . Do you have a preference for makers or non-smokers ?",
+    "emotion_q": "no emotion",
+    "response": "I ’ d prefer non-smoking roommates , but I guess I ’ ll have to take what I can get !",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "School Life",
+    "query": "The library closes at six o ’ clock . Does it close at that time every day ?",
+    "emotion_q": "no emotion",
+    "response": "Not always .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "Who's that ?",
+    "emotion_q": "no emotion",
+    "response": "Search me .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Work",
+    "query": "Yes , I have been working in the Public Relations Section of a company in the past two years . I plan the advertising campaign and cooperate the work of artists and typographers . Sometimes I have to do the work of a specialist when there ’ s something urgent . Do you have any practical experience as a secretary ?",
+    "emotion_q": "no emotion",
+    "response": "Yes , sir . I acted as a secretary in an insurance company .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Work",
+    "query": "For example , some countries restrict imports by quantitative restriction . Why ?",
+    "emotion_q": "no emotion",
+    "response": "This is used to protect local industries or to achieve certain political objectives .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "Really ? Are you going to introduce us ?",
+    "emotion_q": "surprise",
+    "response": "Well , he has already taken you know , that's his wife right there .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "Did you watch the volleyball match last night ?",
+    "emotion_q": "no emotion",
+    "response": "Yeah .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Work",
+    "query": "How about your grades of study ?",
+    "emotion_q": "no emotion",
+    "response": "I had been doing quite well . In all subjects , I got excellent scores . Well . In that case , you must have got good records in English , too . Yes , I was the top student among my classmates .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Tourism",
+    "query": "That's fine , but we have only a single room , is that OK ?",
+    "emotion_q": "no emotion",
+    "response": "Yes . Please help me reserve it .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "I've heard you're going to America tomorrow . I want to see you off at the airport .",
+    "emotion_q": "happiness",
+    "response": "Oh , thanks a lot .",
+    "emotion_r": "happiness"
+  },
+  {
+    "topic": "Relationship",
+    "query": "I did for a while , I suppose , until I left university , but after that not really . Yeah , I've lost touch with most people as well , but I still see Rose occasionally . Oh yes , how's she getting on ?",
+    "emotion_q": "no emotion",
+    "response": "OK , I suppose , but she's had a rough time in the last few years , She got divorced .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Just fine . I see . Aren ’ t you busying tomorrow evening ?",
+    "emotion_q": "happiness",
+    "response": "Let me see . Akha . No , I guess I ’ ll be free . Well , why not dine out together and go to the moves .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Health",
+    "query": "It was for 4 I can see the appointment that you had . What day do you need to change to ?",
+    "emotion_q": "no emotion",
+    "response": "I want to change to next Tuesday .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "I wanted to go , but I couldn't . It was a great game . It's too bad that I couldn't make it . Who won ?",
+    "emotion_q": "no emotion",
+    "response": "Our team played hard and won . I really wish I went to the game . It was the best game ever . So tell me the final score . The other team lost by three points , 101-98 . It must've been a close game . It really was . You should've gone . Hopefully , I'll make it to the next one .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "It's two yuan . Which way do we go for the Northern Line ?",
+    "emotion_q": "no emotion",
+    "response": "Just go through the No . 8 ticket-barrier over there . A train will be in directly .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Work",
+    "query": "Is that so ?",
+    "emotion_q": "surprise",
+    "response": "Yes , I don't want to be stuck in a rut . I want to move on .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Tourism",
+    "query": "Maybe I have an idea how it happened . How ?",
+    "emotion_q": "no emotion",
+    "response": "You were too busy looking at Joseph , and you weren't paying attention to the road .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Yes . I'd like a crab cocktail . Would you like some soup first ?",
+    "emotion_q": "no emotion",
+    "response": "Very well .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "I'm going to do some shopping . Why don't you come with me ?",
+    "emotion_q": "no emotion",
+    "response": "I can't . I have to meet someone .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "Are you coming or not ?",
+    "emotion_q": "no emotion",
+    "response": "I haven't decided yet . Well , make up your mind . We need to know . Ok , count me in .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "Well ... ? Have you thought of it yet ?",
+    "emotion_q": "no emotion",
+    "response": "No ...",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "What kinds do you have ?",
+    "emotion_q": "no emotion",
+    "response": "Oh , we have quite a regular , cold perm , straight perm , pin curl and foam . Last time I tried a pin curl perm and a foam permanent . Set the wave a little looser than usual , please .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Do you know if there's a restroom around here ?",
+    "emotion_q": "no emotion",
+    "response": "Yes , there's one here . It's in the store .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "Where can I get the information , Kate ?",
+    "emotion_q": "no emotion",
+    "response": "Ask John . He is sure to know about it .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "I can't afford it . So you plan on washing your clothes here from now on ?",
+    "emotion_q": "no emotion",
+    "response": "That's my only option right now . Don't worry . Besides , it's a lot cheaper to wash clothes this way .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "Hello , Bobby , It seems that I can't arrive at your home by 12 o'clock . What happened ? We're all expecting you , Hans , Dick , Archie ...",
+    "emotion_q": "no emotion",
+    "response": "I'm so sorry , I've been held up by the damn traffic jam for half an hour . I'd have arrived but for that .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Yes , I am . I arrived only three days ago from Japan . How do you like New York city ?",
+    "emotion_q": "no emotion",
+    "response": "I like it very much , but it's a little confusing to me .",
+    "emotion_r": "happiness"
+  },
+  {
+    "topic": "Relationship",
+    "query": "Is Water Shrinking Festival official ?",
+    "emotion_q": "no emotion",
+    "response": "No , most of the traditional festivals of the minority nationalities are not official .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Tourism",
+    "query": "Yes . Babies under six months are free of charge . We offer 50 % discount to children under 7 . How old are your children ?",
+    "emotion_q": "no emotion",
+    "response": "One is 4 months and the other is years old . Altogether you have to pay $ 800 .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "The chicken tastes wonderful , but it is kind of dry . Is your fish OK ?",
+    "emotion_q": "no emotion",
+    "response": "My fish has good seasoning but is a little dry . It seems as if they got busy and left it sitting before it got to us . Yes , maybe they are short-handed in the kitchen tonight .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "Any time will suit me . Are you doing anything tomorrow ?",
+    "emotion_q": "happiness",
+    "response": "I'm free tomorrow .",
+    "emotion_r": "happiness"
+  },
+  {
+    "topic": "Finance",
+    "query": "Can I help you with something ?",
+    "emotion_q": "no emotion",
+    "response": "I need to cancel one of my accounts .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Attitude & Emotion",
+    "query": "Then you might need to pretend to be a little crazy . Does this mean that if i might want those new European bitches , i am supposed to wonder run reget ?",
+    "emotion_q": "no emotion",
+    "response": "Do you think it is a ~ got give your brain , use it if you really cannot accept it people touch your head , keep distance from them , why not just wear your big flyby hat and ~ is anyone get close to you . That is my work , i will try it .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "I like classical music . Do you ?",
+    "emotion_q": "no emotion",
+    "response": "Not very much . Classical music sends me to sleep I don't believe you . It ’ s true . You are funny !",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Politics",
+    "query": "Is the suspect in this line ?",
+    "emotion_q": "no emotion",
+    "response": "I see him .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Tourism",
+    "query": "What's your name please ?",
+    "emotion_q": "no emotion",
+    "response": "Wang Yongmei .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Finance",
+    "query": "I'm sorry but 5 of these notes seem to be counterfeit . Look at this watermark , do you see it ?",
+    "emotion_q": "no emotion",
+    "response": "It does look a little strange , I didn't notice that before .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Work",
+    "query": "Oh.This is Paul.When will he be back ?",
+    "emotion_q": "no emotion",
+    "response": "He will be back at about seven o'clock .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "You need to start the car now . What do you want me to do ?",
+    "emotion_q": "no emotion",
+    "response": "Go left .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "I ’ Ve been away on holidays for sometime . No wonder I haven ’ t seen you recently . Where did you spend your holidays ?",
+    "emotion_q": "no emotion",
+    "response": "I went with my husband . Our first stop was Bangkok . We stayed there for 5 days . Then we flew to Hong Kong , stopover for 3 days . Our last stop was China . We visited the Great Wall .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "I can ’ t say I do . What I like a girl with good manners . Well , yes . But surely you like a girl with a nice figure . Yes . But I like a girl with a nice personality . But you like a girl to be rich , surely ?",
+    "emotion_q": "no emotion",
+    "response": "Not particularly . I like a girl to be good .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "No , it won't . So when will it be here then ?",
+    "emotion_q": "no emotion",
+    "response": "Never .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Tourism",
+    "query": "The plane must fuel before flying to Paris . Can we get off the plane ?",
+    "emotion_q": "no emotion",
+    "response": "Surely of course .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Yes , I like it , because it's convenient . Last week , I tried to buy a new cellphone online , but I didn't know how to pay for it . First , you should open an account at the online bank . After that , you can buy anything you want online . Are there many things online ?",
+    "emotion_q": "no emotion",
+    "response": "Sure . You can find everything all over the world . Let's check it out online ! ( They log in a shopping website . )",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Work",
+    "query": "Will they send me a form telling me that I have been granted unemployment ?",
+    "emotion_q": "no emotion",
+    "response": "A Notice of Unemployment Insurance Award letter will be sent to you .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "what are you watching on the telly ?",
+    "emotion_q": "no emotion",
+    "response": "there's a great sitcom on Channel 3 that stars in about three minutes .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "School Life",
+    "query": "she says a part-time job is cursed blessing . It takes so much time and energy that I won ’ t be able to focus on my studys . that may be true . But I ’ m sure you ’ re able to find a balance between them . Why not try it ?",
+    "emotion_q": "no emotion",
+    "response": "I turned down quite a few offers before for her sake . But I ’ m a senior now , I don ’ t want to miss the chance this time . I agree with you but I think you really need to talk to your mother and tell her what's on your mind .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Work",
+    "query": "Well , I think you ' Ve reconsidered our proposal , Diane . Yes , you are right . After all , the quality of your air conditioners is good . The only problem is price . I should not be surprised , many customers have the same opinion . Do you have any suggestion in mind ? Our salesman told your secretary that the price could be negotiable .",
+    "emotion_q": "no emotion",
+    "response": "That's why I came to your office today . We think for your model WE - 506 $ 590 would be reasonable , because air conditioners of the same kind sold by other companies are usually about 579-649 . That's true . But if you understand that quality is the most important aspect of a product , you'll agree that 679 is not high , especially when we allow you a 10 % discount .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Work",
+    "query": "I've just got a new printer . How often do I need to replace the print heads ?",
+    "emotion_q": "no emotion",
+    "response": "Well , under normal conditions each head lasts about 5 000 copies or so . It depends on the user , but about once a month is average .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "Haven ’ t you heard ? Richard was fired by our manager .",
+    "emotion_q": "no emotion",
+    "response": "You ’ re kidding . It can ’ t be true .",
+    "emotion_r": "surprise"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Mom , where are you going ?",
+    "emotion_q": "no emotion",
+    "response": "I am going to buy some food to cook for supper .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Good evening . How many people of your party ?",
+    "emotion_q": "no emotion",
+    "response": "Three . Two adults and one kid .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "And bugs . They can catch anything . Do you have to walk a cat ?",
+    "emotion_q": "no emotion",
+    "response": "No , they use litter boxes or go outside by themselves.Thev ' re so smart . But then you have to change the litter box . It's better than picking up dog poop .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "So , have you seen all three The Lord of the Rings movies ?",
+    "emotion_q": "no emotion",
+    "response": "Yes , but I didn't really like the third one at all .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Oh , dear . Did you lose a lot of money ?",
+    "emotion_q": "no emotion",
+    "response": "No . Only a few pounds . But my passport was in the bag . That ’ what I ’ m really worry about .",
+    "emotion_r": "sadness"
+  },
+  {
+    "topic": "Work",
+    "query": "Business is booming . I understand you want to meet up with me next week . How's your schedule look ?",
+    "emotion_q": "no emotion",
+    "response": "Let me see . I can come out and see you first thing Wednesday .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Really ? That's wonderful !",
+    "emotion_q": "happiness",
+    "response": "Thank you for your warning . Not at all .",
+    "emotion_r": "happiness"
+  },
+  {
+    "topic": "Tourism",
+    "query": "Five hundred yuan . Does that include hotels and meals ?",
+    "emotion_q": "no emotion",
+    "response": "Oh , yes , and admission tickets for places of interest as well .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Work",
+    "query": "Well , we've had to cut down the amount of solvents we use and we ’ re not allowed to use lead in our products any more . What happens if you exceed the limits ?",
+    "emotion_q": "no emotion",
+    "response": "We try not to because you might have to pay quite a heavy fine .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "If you go to the breakfast aisle , you'll find the cereal there . What aisle is that ?",
+    "emotion_q": "no emotion",
+    "response": "You'll find it by the oatmeal and breakfast bars . I know where that is at .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Finance",
+    "query": "Oh , really ? Do you know which company it's from ?",
+    "emotion_q": "surprise",
+    "response": "Yes , it's from Satura Beds of Tokyo .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Work",
+    "query": "I want to do some management job since I have three-year's work history . What are your plans if you were hired ?",
+    "emotion_q": "no emotion",
+    "response": "I would apply my specialty and experience to my job and gradually move up to the management level in this company .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "School Life",
+    "query": "Absolutely ! It was founded by a group of Puritan immigrants from England . Why was it founded by the Puritans ? Where were the atheistic educators ?",
+    "emotion_q": "no emotion",
+    "response": "Because most of the first English immigrants who came to the United States were Puritans .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "I would like to buy a new fridge . Is there one in particular that you like ?",
+    "emotion_q": "no emotion",
+    "response": "I was looking at this Kenmore refrigerator . Ah yes , that is a great refrigerator .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "We had a difference of opinion . Is she going to be okay ?",
+    "emotion_q": "no emotion",
+    "response": "She'll be fine .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "Herman , why are you so excited ?",
+    "emotion_q": "no emotion",
+    "response": "I have met a beautiful girl .",
+    "emotion_r": "happiness"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Oh , this way please.What size do you wear ?",
+    "emotion_q": "no emotion",
+    "response": "Size 41 . I want something in dark flannel .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Finance",
+    "query": "That's done . Do you need to see any credentials ?",
+    "emotion_q": "no emotion",
+    "response": "Yes , a passport will be fine . I don't have my passport on me at the moment . I'll just pop back to my office and pick it up . That's fine , Sir . We'll see you again a little later .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "So Janet , do you do any sports ?",
+    "emotion_q": "no emotion",
+    "response": "Well , I go to the gym a lot . I am a member of a gym nearby .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Good afternoon , sir , is there anything I can help you with today ?",
+    "emotion_q": "no emotion",
+    "response": "umm ... yeah ! I ’ m looking for a nice gift to give my girlfriend . Our fifth anniversary ’ s next Friday .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Health",
+    "query": "Do you have enough time to get the right amount of sleep ?",
+    "emotion_q": "no emotion",
+    "response": "I have enough time . I just can ’ t seem to fall asleep and stay asleep .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "With everything on it ?",
+    "emotion_q": "no emotion",
+    "response": "That sounds great .",
+    "emotion_r": "happiness"
+  },
+  {
+    "topic": "Work",
+    "query": "That's good . Do you suppose you will be back at company the day after tomorrow ?",
+    "emotion_q": "no emotion",
+    "response": "I hope so . And I will definitely tell you if I can not . Well , take care of yourself . And hope you will be better as soon as possible .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Tourism",
+    "query": "What ’ s your name , please ?",
+    "emotion_q": "no emotion",
+    "response": "My name is Judy Wang .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "Of course , Jim . Have I met Tom before ?",
+    "emotion_q": "no emotion",
+    "response": "Mm — hmm . You met him last summer . He is small and very smart .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "School Life",
+    "query": "We plan to get together once a week . What days , do you know ?",
+    "emotion_q": "no emotion",
+    "response": "We were talking about Wednesday evenings at the library , from seven to eight . Okay , count me in .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "Zach , what's that on your arm ?",
+    "emotion_q": "no emotion",
+    "response": "I don't know . It looks a bit red , but I'm sure it's nothing .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Yes , absolutely . Where are the panty-hose ?",
+    "emotion_q": "no emotion",
+    "response": "Here . We have black , white and transparent panty-hose here .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "I saw the weather report , and it's going to rain for the next eight days . That sucks so much . What are we going to do ?",
+    "emotion_q": "no emotion",
+    "response": "I'm getting pretty bored . We should do something despite the rain .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Both the kitchen and the bathroom plumbing are messed up . How long have you had these problems ?",
+    "emotion_q": "no emotion",
+    "response": "It has been going on for a while , but just started to get worse this morning .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Can you believe her ? She is not even a hundred pounds and she is going off on how she wants to go on a diet .",
+    "emotion_q": "surprise",
+    "response": "Tell me about it . If I was as small as her , I wouldn't think about going on a diet .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "What do I need to make an appointment for ?",
+    "emotion_q": "no emotion",
+    "response": "You need an appointment so you can sign the papers .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "I could try , but I can ’ t say for sure if I ’ ll get up in time . What time do you want to go ?",
+    "emotion_q": "no emotion",
+    "response": "I ’ ll give you a call around 6 o'clock and stop by around 6 thirty . O . K . , maybe if I have someone to go with , I ’ ll be able to get up in time for a jog . Great , I ’ ll see you then . See you .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Culture & Education",
+    "query": "You know , Richard isn't such a bad guy . He made the comment out of ignorance , not malice . So , what did you say when he asked you how long it took you to learn English ?",
+    "emotion_q": "no emotion",
+    "response": "I told him 28 years . And , he knows I'm 28 years old since I just celebrated my birthday last week . He was puzzled for a minute , and then he got it .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Work",
+    "query": "Ours is a company special in exporting leather products . And what about yours ?",
+    "emotion_q": "no emotion",
+    "response": "My firm has high standing in my country . My bank is the City Bank , New York . You may refer to it for my status .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Work",
+    "query": "You would be using mainly English in this job . Do you think you can make yourself understood in English with ease ?",
+    "emotion_q": "no emotion",
+    "response": "Yes , I think I speak English quite fluently . I've often explained historical places in Xi'an to foreign tourists in English . They say my English is quite good .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Work",
+    "query": "We ’ ll offer you a monthly salary to begin with , in addition , we offer one percent commission and all your sales . You also enjoy life insurance and health insurance . What ’ s starting salary would you expect here ?",
+    "emotion_q": "no emotion",
+    "response": "They sum my skills and experience . I ’ d like to start it with 4000 yuan a month . That sounds reasonable .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "I knew we'd find the right pan sooner or later . How would you like to pay ?",
+    "emotion_q": "no emotion",
+    "response": "Cash . But first , I need a lid for this pan .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "workplace communication",
+    "query": "What are the most effective strategies for managing conflict with direct reports, considering the importance of calm authority, empathy, and a culture of transparency?",
+    "emotion_q": "curious",
+    "response": "Navigating conflict with direct reports can be challenging, but it's important to remember that you're not alone in this. To manage it effectively, start by setting clear goals and providing specific feedback. Keep in mind that it's crucial to separate personal feelings from professional issues, and when addressing concerns, opt for private settings to maintain confidentiality. Celebrate successes openly to reinforce a positive team culture, and handle corrections with care in private to preserve dignity. Your calm authority and empathetic approach will not only help resolve the conflict but also strengthen the trust and respect within your team.",
+    "emotion_r": "informative"
+  },
+  {
+    "topic": "Relationship",
+    "query": "Can you imagine having a million dollars ?",
+    "emotion_q": "no emotion",
+    "response": "Yes , and I know a few things I'd spend the money on . Yeah , me too . A new car for a start .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "Yeah , I like it a lot . It's very pretty . Where did you buy it ?",
+    "emotion_q": "happiness",
+    "response": "At the mall on 5th street .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "That's all I have to do ?",
+    "emotion_q": "no emotion",
+    "response": "That's everything .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "Of course I know it , but you know it's hard to quit smoking ... Stop beating around the bush . Will you quit or not ?",
+    "emotion_q": "no emotion",
+    "response": "Yes , ma'am . Whatever you say .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "Sure . But , it will be a long hike , 30 miles in three days . Have you been hiking before ?",
+    "emotion_q": "no emotion",
+    "response": "Yeah , I go a lot too . I saw a bear and a mountain lion on my last hike . Wow ! You must have been pretty far away from the city . Yeah , my friend and I hiked in a very wild part of the national forest . Well , bring him along too . We ’ ll have a great time this weekend . Thanks , I ’ ll ask him .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "what happened to him then ?",
+    "emotion_q": "no emotion",
+    "response": "not much ; it was a minor offence back then . He got away with a fine of $ 500 .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "No , it isn't mine . I blundered upon it under the sofa . Do you know whose watch it is ?",
+    "emotion_q": "no emotion",
+    "response": "Let me have a look . It's mine . I have been looking for it , but just cannot find it . It's present from my father . Well , here you are . Remember to put it in a proper place .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "I'd be glad to . Do you need anything else ?",
+    "emotion_q": "no emotion",
+    "response": "That ’ s all .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Attitude & Emotion",
+    "query": "How would you like your hair cut ?",
+    "emotion_q": "no emotion",
+    "response": "I want it short . Then , I'll just trim it . It will do .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "No . I'm from Taiwan . Can't you see ?",
+    "emotion_q": "no emotion",
+    "response": "Well , there are many Chinese Americans , you know.And your English is very good . You sound like an American . I don't think so . You are flattering me . No , really . I can only hear a little accent .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Finance",
+    "query": "How much do you need ?",
+    "emotion_q": "no emotion",
+    "response": "Three thousand US dollars .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Relationship",
+    "query": "I heard that your previous manager was very capable , he is a good manger . That ’ s a matter of opinion . What do you mean ?",
+    "emotion_q": "no emotion",
+    "response": "I worked with him for two years . That was the worst time in my career .",
+    "emotion_r": "disgust"
+  },
+  {
+    "topic": "Relationship",
+    "query": "They are muslims on a pilgrimage to mecca . Muslims call this pilgrimage “ haj ” . Why do they go there ?",
+    "emotion_q": "no emotion",
+    "response": "Muslims believe that every man who is able should go on a haj at least once in his life . Mecca is the spiritual centre of the muslim faith . When muslims pray , they face towards mecca . That ’ s right . Unfortunately , so many people go on the haj each year that there are often stamped and people get killed . I heard about that . The pilgrims must walk around a large , sacred black stone . That ’ s right . That ’ s when accidents often happen . The Saudi government tries to limit the number of pilgrims , to reduce the chances of accidents . Pilgrimages are common in many faiths . Yes . In England , Christian pilgrims might go to Canterbury and many Christians go to the Vatican on pilgrimages .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Work",
+    "query": "Really ? What could that be ?",
+    "emotion_q": "surprise",
+    "response": "Well , I bet you will love them too . If you need help , just ask me any time . I am in the next door . You can also reach me through the extension 508 . That is very kind of you . Thank you very much .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "This broth is wonderful . What's in it ?",
+    "emotion_q": "happiness",
+    "response": "Lamb and beef . It will get even tastier when we add the veggies !",
+    "emotion_r": "happiness"
+  },
+  {
+    "topic": "Finance",
+    "query": "Hello , Sir , may I help you ?",
+    "emotion_q": "no emotion",
+    "response": "Yes . I would like some information for requesting a loan . Very well , here are the general terms of our loan policies . We pride ourselves in having the lowest interest rate in the country for personal loans .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "If I do all this do you think I can lose twenty pounds in four weeks ?",
+    "emotion_q": "no emotion",
+    "response": "Don ’ t count on it .",
+    "emotion_r": "no emotion"
+  },
+  {
+    "topic": "Ordinary Life",
+    "query": "That's not the point . Come on , can you imagine that there will be no electricity on such a hot day ?",
+    "emotion_q": "no emotion",
+    "response": "Oh , my god ! No air-conditioner !",
+    "emotion_r": "fear"
+  }
+]
