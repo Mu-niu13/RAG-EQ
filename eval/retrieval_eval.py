@@ -38,11 +38,9 @@ def evaluate_baseline():
         D, I = faiss_index.search(query_vec, TOP_K)
         retrieved = [corpus[i] for i in I[0]]
 
-        # 情绪向量
         q_emotion, q_dist = emotion_model.predict(query, return_distribution=True)
         q_vec = emotion_model.get_emotion_vector_eval(q_dist)
 
-        # 计算相似度 & 是否命中
         matched = False
         sims = []
         for entry in retrieved:
