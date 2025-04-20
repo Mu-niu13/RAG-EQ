@@ -1,0 +1,82 @@
+[
+  {
+    "query": "How can we address the feeling of being disconnected during our quality time together?",
+    "conv_id": 0
+  },
+  {
+    "query": "How can we address the concerns raised by our coworker without escalating the situation into a blame game?",
+    "conv_id": 1
+  },
+  {
+    "query": "How can we effectively incorporate a relaxing activity into our routine to alleviate the stress from school?",
+    "conv_id": 2
+  },
+  {
+    "query": "How can I address the pressure to be constantly available, especially when I need personal space to recharge?",
+    "conv_id": 3
+  },
+  {
+    "query": "How can one effectively say no while maintaining high emotional intelligence in everyday interactions?",
+    "conv_id": 4
+  },
+  {
+    "query": "How can I effectively address a leader's concerns about my project timeline and work outcomes during a work dinner or celebration?",
+    "conv_id": 5
+  },
+  {
+    "query": "What are the best ways to respond to praise from various sources without feeling awkward or uncomfortable?",
+    "conv_id": 6
+  },
+  {
+    "query": "What are effective strategies to maintain a refined and heartfelt approach to toasting in relaxed social gatherings like reunions and housewarmings?",
+    "conv_id": 7
+  },
+  {
+    "query": "How can we address the stakeholder's reluctance to adopt evidence-based recommendations in favor of anecdotal reasoning?",
+    "conv_id": 8
+  },
+  {
+    "query": "How can we address the situation where stakeholders perceive our role as merely an executor rather than a strategic partner?",
+    "conv_id": 9
+  },
+  {
+    "query": "How can I address the issue of a classmate consistently not contributing to our group projects?",
+    "conv_id": 10
+  },
+  {
+    "query": "How can we address the growing distance between us and rekindle our friendship?",
+    "conv_id": 11
+  },
+  {
+    "query": "What are the best practices for crafting professional and polite holiday well-wishing messages for various holidays, including New Year, Spring Festivals, Thanksgiving, Christmas, Hanukkah, Year-End Celebrations, and Labor Day / May Day?",
+    "conv_id": 12
+  },
+  {
+    "query": "How can we effectively rebuild our relationship after overcoming past conflicts?",
+    "conv_id": 13
+  },
+  {
+    "query": "What are the best practices for delivering a polite rejection while maintaining a respectful and friendly tone?",
+    "conv_id": 14
+  },
+  {
+    "query": "What are effective ways to maintain a balance between confidence, humor, and respect while engaging in playful interactions?",
+    "conv_id": 15
+  },
+  {
+    "query": "How can we effectively address the stakeholder's request for redundant validations or approvals, while also fostering trust in the work we deliver?",
+    "conv_id": 16
+  },
+  {
+    "query": "How can a student effectively address a professor who consistently mispronounces their name?",
+    "conv_id": 17
+  },
+  {
+    "query": "How can I effectively express gratitude for the unexpected wisdom received from a family member, especially when it has significantly impacted my life?",
+    "conv_id": 18
+  },
+  {
+    "query": "What specific actions or behaviors have you noticed that indicate a team member is becoming disengaged or withdrawing from the project?",
+    "conv_id": 19
+  }
+]
