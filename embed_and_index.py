@@ -32,8 +32,9 @@ def build_index():
     with open('docs/clean/knowledge.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
 
+    for idx, entry in enumerate(data):
+        entry["conv_id"] = idx
     queries = [entry["query"] for entry in data]
-
     embeddings = MODEL.encode(queries, batch_size=64, show_progress_bar=True)
 
     index = faiss.IndexFlatL2(embeddings.shape[1])

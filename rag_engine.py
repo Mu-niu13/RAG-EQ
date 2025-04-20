@@ -28,7 +28,7 @@ def get_emotion_vector(emotion_dist, labels):
 
 
 # two-stage rag main pipeline
-def rag_pipeline(user_query, top_k=5):
+def rag_pipeline(user_query, top_k=10):
     # Stage 1
     # rewrite query
     user_query = rewrite_query_with_emotion(LLM,EMOTION_MODEL, user_query)
