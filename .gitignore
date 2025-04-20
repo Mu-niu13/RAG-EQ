@@ -84,6 +84,7 @@ ipython_config.py
 
 # models
 models/*.gguf
+*.csv
 
 # vector db
 *.index

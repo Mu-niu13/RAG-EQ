@@ -11,7 +11,7 @@ from query_rewrite import rewrite_query_with_emotion
 
 # setting
 INDEX_FILE = 'faiss.index'
-DATA_FILE = 'data/empathetic_dialogues.json'
+DATA_FILE = 'docs/clean/knowledge.json'
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
@@ -53,7 +53,7 @@ def rag_pipeline(user_query, top_k=10):
     user_emotion_vec = get_emotion_vector(emotion_dist, EMOTION_MODEL.emotion_labels)
     scored = []
     for entry in candidates:
-        entry_dist = EMOTION_MODEL.predict(entry['utterance'], return_distribution=True)[1]
+        entry_dist = EMOTION_MODEL.predict(entry['query'], return_distribution=True)[1]
         entry_vec = get_emotion_vector(entry_dist, EMOTION_MODEL.emotion_labels)
         sim = cosine_similarity([user_emotion_vec], [entry_vec])[0][0]
         if sim < 0.4:
@@ -63,7 +63,7 @@ def rag_pipeline(user_query, top_k=10):
     top_docs = [x[1] for x in scored[:3]]
 
     # prompt
-    context = "\n".join([f"- {doc['utterance']}" for doc in top_docs])
+    context = "\n".join([f"- {doc['query']}" for doc in top_docs])
     prompt = f"""You are an expert in high emotional intelligence and workplace diplomacy.
 Your role is not just to comfort the user, but to provide tactful, thoughtful, and strategic suggestions for handling sensitive interpersonal situations.
 
@@ -71,6 +71,23 @@ The user currently feels {primary_emotion}. Your goal is to guide them toward fe
 
 Here are examples of how others handled similar situations:
 {context}
+
+Now, please respond to the user's concern:
+{user_query}
+
+Assistant:"""
+
+    print(f"[Prompt Ready] Final prompt:\n{prompt}")
+
+    # LLM response
+    output = LLM(prompt, max_tokens=256)
+    print("Raw output:", output)
+    return output['choices'][0]['text'].strip()
+
+
+def baseline_pipeline(user_query):
+    prompt = f"""You are an expert in high emotional intelligence and workplace diplomacy.
+Your role is not just to comfort the user, but to provide tactful, thoughtful, and strategic suggestions for handling sensitive interpersonal situations.
 
 Now, please respond to the user's concern:
 {user_query}
