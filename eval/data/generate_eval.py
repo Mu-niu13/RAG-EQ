@@ -3,7 +3,7 @@ import os
 import random
 
 
-SOURCE_PATH = "knowledge.json"
+SOURCE_PATH = "test_dialogues.json"
 OUTPUT_PATH = "eval_queries.json"
 
 #load

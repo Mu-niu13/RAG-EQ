@@ -22,8 +22,6 @@ if __name__ == "__main__":
 
             try:
                 rag_response = rag_pipeline(user_query)
-                print("===============================================================")
-                print(rag_response)
             except Exception as e:
                 rag_response = f"[Error] {e}"
 
