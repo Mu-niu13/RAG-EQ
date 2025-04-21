@@ -30,6 +30,8 @@ emotion_map = {
     "pride": ["humility", "confidence", "inspiration"],
     "grief": ["solace", "memory", "companionship"]
 }
+
+
 def related_emotions(emotion):
     emotion = emotion.lower()
     if emotion in emotion_map:

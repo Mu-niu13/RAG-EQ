@@ -10,7 +10,7 @@ from emotion_classifier import EmotionClassifier
 import faiss
 
 INDEX_FILE = "../faiss.index"
-DATA_FILE = "data/knowledge.json"
+DATA_FILE = "../docs/clean/knowledge.json"
 EVAL_QUERIES_FILE = "data/eval_queries.json"
 TOP_K = 5
 
@@ -26,7 +26,6 @@ with open(EVAL_QUERIES_FILE, "r", encoding="utf-8") as f:
 
 
 def evaluate_baseline():
-    hit = 0
     total_sim = 0
     results = []
 
@@ -41,7 +40,6 @@ def evaluate_baseline():
         q_emotion, q_dist = emotion_model.predict(query, return_distribution=True)
         q_vec = emotion_model.get_emotion_vector_eval(q_dist)
 
-        matched = False
         sims = []
         for entry in retrieved:
             e_dist = emotion_model.predict(entry["query"], return_distribution=True)[1]
@@ -49,28 +47,21 @@ def evaluate_baseline():
             sim = cosine_similarity([q_vec], [e_vec])[0][0]
             sims.append(sim)
 
-            if entry.get("conv_id") == label_idx:
-                matched = True
 
         results.append({
             "query": query,
             "emotion": q_emotion,
-            "hit@5": matched,
             "avg_emotion_sim": round(np.mean(sims), 3)
         })
 
-        if matched:
-            hit += 1
         total_sim += np.mean(sims)
 
     print("\n=== Baseline RAG ===")
-    print(f"Hit@5: {hit / len(eval_queries):.4f}")
     print(f"Avg Emotion Similarity: {total_sim / len(eval_queries):.4f}")
     return results
 
 
 def evaluate_with_rerank():
-    hit_count = 0
     total_emotion_sim = 0.0
     results = []
 
@@ -95,29 +86,22 @@ def evaluate_with_rerank():
         reranked.sort(reverse=True, key=lambda x: x[0])
         top_docs = [x[1] for x in reranked[:TOP_K]]
 
-        matched = any(doc.get("conv_id") == gt_conv_id for doc in top_docs)
         avg_sim = np.mean([x[0] for x in reranked[:TOP_K]])
         total_emotion_sim += avg_sim
-        if matched:
-            hit_count += 1
 
         results.append({
             "query": query_text,
             "emotion": query_emotion,
-            "hit@5": matched,
             "avg_emotion_sim": round(avg_sim, 3)
         })
 
-    print(f"\n[RERANK] Hit@{TOP_K}: {hit_count / len(eval_queries):.4f}")
     print(f"[RERANK] Avg Emotion Similarity: {total_emotion_sim / len(eval_queries):.4f}")
     return results
 
 
 def summarize(results, name="Model"):
-    hit = sum(1 for r in results if r["hit@5"])
     avg_sim = np.mean([r["avg_emotion_sim"] for r in results])
     print(f"\n======== {name} Evaluation ========")
-    print(f"Hit@5: {hit / len(results):.4f}")
     print(f"Avg Emotion Similarity: {avg_sim:.4f}")
 
 

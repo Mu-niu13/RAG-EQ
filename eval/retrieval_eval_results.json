@@ -1,124 +1,104 @@
 {
   "emotion_rerank": [
     {
-      "query": "How can we address the feeling of being disconnected during our quality time together?",
-      "emotion": "sadness",
-      "hit@5": false,
-      "avg_emotion_sim": 0.678
-    },
-    {
-      "query": "How can we address the concerns raised by our coworker without escalating the situation into a blame game?",
-      "emotion": "anger",
-      "hit@5": false,
-      "avg_emotion_sim": 0.607
-    },
-    {
-      "query": "How can we effectively incorporate a relaxing activity into our routine to alleviate the stress from school?",
+      "query": "I could try , but I can ’ t say for sure if I ’ ll get up in time . What time do you want to go ?",
       "emotion": "neutral",
-      "hit@5": false,
-      "avg_emotion_sim": 0.953
+      "avg_emotion_sim": 0.855
     },
     {
-      "query": "How can I address the pressure to be constantly available, especially when I need personal space to recharge?",
+      "query": "Yes . Babies under six months are free of charge . We offer 50 % discount to children under 7 . How old are your children ?",
       "emotion": "neutral",
-      "hit@5": false,
-      "avg_emotion_sim": 0.988
+      "avg_emotion_sim": 0.955
     },
     {
-      "query": "How can one effectively say no while maintaining high emotional intelligence in everyday interactions?",
+      "query": "How would you like your hair cut ?",
       "emotion": "neutral",
-      "hit@5": false,
-      "avg_emotion_sim": 0.988
-    },
-    {
-      "query": "How can I effectively address a leader's concerns about my project timeline and work outcomes during a work dinner or celebration?",
-      "emotion": "neutral",
-      "hit@5": false,
-      "avg_emotion_sim": 0.858
-    },
-    {
-      "query": "What are the best ways to respond to praise from various sources without feeling awkward or uncomfortable?",
-      "emotion": "sadness",
-      "hit@5": false,
-      "avg_emotion_sim": 0.603
-    },
-    {
-      "query": "What are effective strategies to maintain a refined and heartfelt approach to toasting in relaxed social gatherings like reunions and housewarmings?",
-      "emotion": "neutral",
-      "hit@5": false,
       "avg_emotion_sim": 0.998
     },
     {
-      "query": "How can we address the stakeholder's reluctance to adopt evidence-based recommendations in favor of anecdotal reasoning?",
-      "emotion": "neutral",
-      "hit@5": false,
-      "avg_emotion_sim": 0.88
+      "query": "Business is booming . I understand you want to meet up with me next week . How's your schedule look ?",
+      "emotion": "surprise",
+      "avg_emotion_sim": 0.82
     },
     {
-      "query": "How can we address the situation where stakeholders perceive our role as merely an executor rather than a strategic partner?",
+      "query": "It was for 4 I can see the appointment that you had . What day do you need to change to ?",
       "emotion": "neutral",
-      "hit@5": false,
-      "avg_emotion_sim": 0.815
+      "avg_emotion_sim": 0.95
     },
     {
-      "query": "How can I address the issue of a classmate consistently not contributing to our group projects?",
-      "emotion": "anger",
-      "hit@5": false,
-      "avg_emotion_sim": 0.822
+      "query": "What can I do for you today ?",
+      "emotion": "neutral",
+      "avg_emotion_sim": 1.0
     },
     {
-      "query": "How can we address the growing distance between us and rekindle our friendship?",
-      "emotion": "neutral",
-      "hit@5": false,
-      "avg_emotion_sim": 0.813
+      "query": "I can ’ t say I do . What I like a girl with good manners . Well , yes . But surely you like a girl with a nice figure . Yes . But I like a girl with a nice personality . But you like a girl to be rich , surely ?",
+      "emotion": "joy",
+      "avg_emotion_sim": 0.612
     },
     {
-      "query": "What are the best practices for crafting professional and polite holiday well-wishing messages for various holidays, including New Year, Spring Festivals, Thanksgiving, Christmas, Hanukkah, Year-End Celebrations, and Labor Day / May Day?",
+      "query": "Will they send me a form telling me that I have been granted unemployment ?",
       "emotion": "neutral",
-      "hit@5": false,
-      "avg_emotion_sim": 0.999
+      "avg_emotion_sim": 0.857
     },
     {
-      "query": "How can we effectively rebuild our relationship after overcoming past conflicts?",
+      "query": "No , thanks . I'm in a hurry . Your car is ready . Good ! How much is it ?",
       "emotion": "neutral",
-      "hit@5": false,
-      "avg_emotion_sim": 0.723
+      "avg_emotion_sim": 0.948
     },
     {
-      "query": "What are the best practices for delivering a polite rejection while maintaining a respectful and friendly tone?",
+      "query": "Yeah , I like it a lot . It's very pretty . Where did you buy it ?",
+      "emotion": "joy",
+      "avg_emotion_sim": 0.475
+    },
+    {
+      "query": "I'm out of work at the moment . Why ?",
+      "emotion": "sadness",
+      "avg_emotion_sim": 0.526
+    },
+    {
+      "query": "Did you watch the volleyball match last night ?",
       "emotion": "neutral",
-      "hit@5": false,
       "avg_emotion_sim": 0.991
     },
     {
-      "query": "What are effective ways to maintain a balance between confidence, humor, and respect while engaging in playful interactions?",
+      "query": "You wanna shoot some hoops ?",
       "emotion": "neutral",
-      "hit@5": false,
-      "avg_emotion_sim": 0.947
+      "avg_emotion_sim": 0.985
     },
     {
-      "query": "How can we effectively address the stakeholder's request for redundant validations or approvals, while also fostering trust in the work we deliver?",
+      "query": "Oh , this way please.What size do you wear ?",
       "emotion": "neutral",
-      "hit@5": false,
-      "avg_emotion_sim": 0.677
+      "avg_emotion_sim": 0.995
     },
     {
-      "query": "How can a student effectively address a professor who consistently mispronounces their name?",
-      "emotion": "disgust",
-      "hit@5": false,
-      "avg_emotion_sim": 0.886
+      "query": "Is it on the shelf ?",
+      "emotion": "neutral",
+      "avg_emotion_sim": 0.911
     },
     {
-      "query": "How can I effectively express gratitude for the unexpected wisdom received from a family member, especially when it has significantly impacted my life?",
+      "query": "What ’ s your name , please ?",
       "emotion": "neutral",
-      "hit@5": false,
-      "avg_emotion_sim": 0.807
+      "avg_emotion_sim": 0.998
     },
     {
-      "query": "What specific actions or behaviors have you noticed that indicate a team member is becoming disengaged or withdrawing from the project?",
+      "query": "Oh , yes . I like playing basketball . Can you tell me why you like it ?",
+      "emotion": "joy",
+      "avg_emotion_sim": 0.298
+    },
+    {
+      "query": "How much is a soft ?",
       "emotion": "neutral",
-      "hit@5": false,
-      "avg_emotion_sim": 0.82
+      "avg_emotion_sim": 0.987
+    },
+    {
+      "query": "How are you ?",
+      "emotion": "surprise",
+      "avg_emotion_sim": 0.989
+    },
+    {
+      "query": "Good evening . How many people of your party ?",
+      "emotion": "neutral",
+      "avg_emotion_sim": 0.923
     }
   ]
 }
